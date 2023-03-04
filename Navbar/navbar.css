@@ -4,7 +4,6 @@
     box-sizing:border-box;
 }
 
-
 header{
     display:flex;
     justify-content:space-between;
@@ -36,6 +35,48 @@ header{
     text-decoration:none;
 }
 
+
+/*
+Ini dijalankan kalau belum LogIn
+*/
+#auth-group{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+
+.auth{
+    width:124px;
+    height:49px;
+    background-color:white;
+    border-radius:30px;
+    margin-right:20px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+
+}
+
+.auth p{
+    color:#203D3B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600; 
+    font-size:22px;
+      /* color:#203D3B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600; 
+    font-size:22px; */
+}
+
+
+/*
+Ini dijalankan kalau sudah Login
+*/
 #pp_welcome_dropdown{
     display:flex;
     align-items:center;
