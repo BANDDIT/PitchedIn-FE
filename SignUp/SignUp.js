@@ -154,14 +154,18 @@ btn_detail.addEventListener('click',function(e){
         // country.value=null;
         // state.value=null;
         // checkbox.checked=false;
-        login_box.reset();
-        detail_signup.reset();
-        
 
         if(role_dropdown_check%2==1){
             role_dropdown_check+=1;
             close_drop();
         }
 
+        detail_signup.submit();
+        login_box.submit();
+
+        
+        login_box.reset();
+        detail_signup.reset();
+        
     }
 });
