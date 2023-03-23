@@ -8,8 +8,15 @@ let errorMessage = document.querySelector('.ErrorMessage');
 let email = document.getElementById('email');
 let username = document.getElementById('username');
 let password = document.getElementById('password');
+
+function validateEmail(email) {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
 function validation(){
-    if(!(email.value.endsWith('.com')&&email.value.includes('@'))){
+    // if(!(email.value.endsWith('.com')&&email.value.includes('@'))){
+    if(!validateEmail(email.value.trim())){
         errorMessage.style.display="flex";
         errorMessage.innerText="Email Required";
         return false;

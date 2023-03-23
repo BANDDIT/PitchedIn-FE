@@ -1,19 +1,19 @@
 let forgotPass = document.getElementById('forgotPassword');
 let content = document.querySelector('.content-box');
-let close = document.getElementById('close-modal');
-let modal = document.querySelector('.modal');
-let modal_timer = document.getElementById('modal-timer');
-let resend = document.getElementById('resend-btn');
 let login_btn = document.getElementById('login-btn');
-
 let username = document.getElementById('username');
 let password = document.getElementById('password');
 
+let modal = document.querySelector('.modal');
+let close = document.getElementById('close-modal');
+let modal_timer = document.getElementById('modal-timer');
+let resend = document.getElementById('resend-btn');
 let enter_email = document.getElementById('enter-email-btn');
 let enter_email_box = document.querySelector('.enter-email-box');
 let email = document.getElementById('email');
 let errorMessage = document.querySelector('.errorMessage');
 let resendBox = document.querySelector('.modal-box-bottom');
+
 /*
 KASIH COMMENT BUAT SETIAP FUNCTION
 */
@@ -66,9 +66,16 @@ function resets(){
     resendBox.style.pointerEvents="none";
 }
 
+function validateEmail(email) {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
+
 function validation_modal(){
     //&& !(email.value.includes('@'))
-    if(email.value.trim()==""){
+    // if(email.value.trim()==""){
+    if(!validateEmail(email.value.trim())){
         // alert("ESTER");
         errorMessage_modal.style.display="flex";
         errorMessage_modal.innerText="Email is Required";
@@ -133,6 +140,7 @@ resend.addEventListener('click',function(e){
 enter_email.addEventListener('click',function(e){
     e.preventDefault();
     resets();
+    clearInterval(intervalTimer);
     if(validation_modal()){
         Timer();
         resendBox.style.display="flex";
