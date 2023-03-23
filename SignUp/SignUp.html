@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Julius+Sans+One&family=Montserrat:wght@200;300;400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Navbar/navbar.css">
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="../Asset/logo_pitchedin.png" id="logo"/>
+        </a>
+        
+        <div id="nav-group">
+            <a href="#" class="nav">Explore</a>
+            <a href="#" class="nav">Forum</a>
+            <a href="#" class="nav">Tips</a>        
+        </div>
+
+        <div id="auth-group">
+            <a href="../SignUp/SignUp.html" class="auth">    
+                <p>Sign Up</p>
+            </a>
+            <a href="../LogIn/LogIn.html" class="auth">
+                <p>Log In</p>       
+            </a>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <form class="login-box">
+   
+            <!-- <img src="../Asset/signup-pict.png" class="login-pic-img" /> -->
+            <div class="login-auth">
+
+                <div class="login-auth-h1">
+                    <h1>Hi, New User!</h3>
+                </div>
+                
+                <hr>
+
+                <div class="login-auth-email-box">
+                    <img src="../Asset/email-logo.png"  />
+                    <input type="email" id="email" name="email" placeholder="Enter your email"/>
+                </div>
+
+                <div class="login-auth-username-box">
+                    <img src="../Asset/username-logo.png"  />
+                    <input type="text" id="username" name="username" placeholder="Enter your username"/>
+                </div>
+                <div class="login-auth-password-box">
+                    <img src="../Asset/password-logo.png"  />
+                    <input type="password" id="password" name="password" placeholder="Enter your password"/>
+
+                </div>
+
+                <!-- <a href="#" id="forgotPassword">forgot password?</a> -->
+                <label class="checkBox">
+                    <input type="checkbox" name="agree" value="1" id="checkBox-input"> 
+                    <p  id="forgotPassword">I agree to follow PitchedIn's Terms of Service and Privacy Policy</p>
+                </label>
+
+                <p class="ErrorMessage">sdfdsf</p>
+
+                <button type="submit" id="login-btn" class="login-btn">
+                    <p>Sign Up</p>
+                
+                </button>
+            </div>
+            <!-- <img src="../Asset/signup-pict.png" class="login-pic-img" /> -->
+            <div class="login-pic-img">
+                <img src="../Asset/logo-pitchedin-black.png" class="logo-pitchedin"/>
+            </div>
+        </form>
+    
+        <div class="add-info">
+            <p>Already have an account?&nbsp; <a href="../LogIn/LogIn.html" class="sign-up-btn">Log In</a></p>
+        </div>
+    </div>
+
+
+    
+    <form class="detail-signup-form">
+        <div class="detail-signup">
+            <div class="detail-signup-opening">
+                <h1 class="detail-judul1">You are only</h1>
+                <h1 class="detail-judul2">ONE step closer!</h1>
+                <p class="detail-signup-note">Fill in your informations, so we can get to know</p>
+                <p class="detail-signup-note">you better!</p>
+                <div class="btn-container">
+                    <button type="submit" class="btn-detail-signup">
+                        Continue
+                    </button>
+                </div>
+    
+            </div>
+            <div class="container-detail-signup">
+                <div class="detail-signup-data">
+                    <input type="text" id="fullname" name="fullname" class="enter-fullname-text" placeholder="Full Name"/>
+                    <hr class="detail-signup-hr">
+                    <input type="text" id="country" name="country" class="enter-country-text" placeholder="Country"/>
+                    <hr class="detail-signup-hr">
+                    <input type="text" id="state" name="state" class="enter-state-text" placeholder="State"/>
+                    <hr class="detail-signup-hr">
+                    <br>
+
+
+                    <p id="errorMessage2"></p>
+
+                    <div class="role-signup" id="role-signup">
+                        <div class="role-sign-up-group">
+                            <p>I'm Signing Up as &nbsp;</p>
+                            <p id="role-p"></p>
+                        </div>
+                        <img src="../Asset/Dropdown_arrow_white.png">
+                    </div>
+
+                    <div class="pitcher-role" >
+                        Pitcher
+                    </div>
+                    <div class="investor-role">
+                        Investor
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="../Asset/eclipse-signup.png" class="eclipse-signup"/>
+
+
+    </form>
+   
+   
+
+    <script src="SignUp.js"></script>
+</body>
+</html>

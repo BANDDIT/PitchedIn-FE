@@ -10,7 +10,8 @@ header{
     align-items:center;
     background-color: #203D3B;
     width:100%;
-    height:100px;
+    /* height:100px; */
+    height:10%;
 }
 
 #logo{
