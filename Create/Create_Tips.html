@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" integrity="sha512-vEia6TQGr3FqC6h55/NdU3QSM5XR6HSl5fW71QTKrgeER98LIMGwymBVM867C1XHIkYD9nMTfWK2A0xcodKHNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="../Navbar/navbar.css">
+    <style>
+
+    </style>
 </head>
 <body>
     <header>
@@ -61,9 +64,10 @@
                     <p>Help investors to know your idea better</p>
                 </div>
 
+
                 <textarea id="txt-caption" class="input-caption" name="generaldesc" maxlength="500" placeholder="Caption"></textarea>
                 <textarea id="txt-tag" class="input-tag" name="offerdetails" placeholder="Tag People"></textarea>
-
+                <!--
                 <input type="file" id="attachment" class="attachment-tips" placeholder="Drag or upload your attachment here" value=""
                 accept=".pdf,.docx,.xlsx,.jpg,.jpeg,.png" max="25000000"/>
                 <label for="attachment" class="attachment-box-tips attachment-box">
@@ -71,6 +75,14 @@
                     <div class="attachment-box-info">
                         <p><b>Drag</b> or <b>upload</b> your <b>attachments</b> here</p>
                         <p>Upload file in PDF, DOCX, XLSX, JPG, JPEG, or PNG format (Max 25Mb)</p>
+                    </div>
+                </label>-->
+                <input type="file" id="picture-general"  class="logo-file-input" accept=".jpg,.jpeg,.png"/>
+                <label for="picture-general" class="attachment-picture">
+                    <img src="../Asset/create-picture.png"/>
+                    <div class="attachment-box-info">
+                        <p><b>Drag</b> or <b>upload</b> your <b>picture</b> here</p>
+                        <p>Upload in file JPG, JPEG, or PNG Format (Max 25Mb)</p>
                     </div>
                 </label>
                 <br/>
@@ -87,7 +99,12 @@
             <div class="tips-preview-content">
                 <div class="tips-preview-content-header">
                     <div class="tips-preview-content-header-profile">
-                        <img src="../Asset/steven.png"/>
+                        <!--
+                        <img src="../Asset/steven.png" class="profile-picture"/>
+                        -->
+                        <div class="profile-picture">
+                            <img src="../Asset/steven.png"/>
+                        </div>
                         <div class="tips-preview-content-header-profile-name">
                             <h3>Steven Nathaniel</h3>
                             <br/>
@@ -98,14 +115,49 @@
                         <img src="../Asset/three-dot.png"/>
                     </div>
                 </div>
+
                 <div class="tips-preview-content-image">
+                    
+                    <div class="btn_slider">
+                        <img src="../Asset/slider-left.png" class="prev"/> 
+                    </div>
+                    <div class="tips-preview-content-image-pict">
+                        <div class="tips-preview-content-image-pict-frame">
+                            <!--
+                            <div class="slider-image-frame" >
+                                <img src="../Asset/banner-brando-windah.png"/>
+                            </div>
+                            <div class="slider-image-frame" >
+                                <img src="../Asset/youtube-simulation.png"/>
+                            </div>
+                            <div class="slider-image-frame" >
+                                <img src="../Asset/right-arrow.png"/>
+                            </div>
+                            <div class="slider-image-frame" >
+                                <img src="../Asset/eclipse-signup.png"/>
+                            </div>
+                            <div class="slider-image-frame">
+                                <img src="../Asset/login-pict.png"/>
+                            </div>   
+                            -->                      
+                        </div>
+                    </div>
+                    
+                    <div class="btn_slider">
+                        <img src="../Asset/slider-right.png" class="next"/> 
+                    </div>
 
                 </div>
-                <div class="tips-preview-content-bottom">
-                    <div class="logo-preview-content">
 
-                    </div>
-                    <p class="preview-bottom-name">Steven Nathaniel &nbsp;</p>
+                <div class="tips-preview-logo">
+                    <p class="preview-bottom-name">Steven Nathaniel</p>
+                    <img src="../Asset/heart-noLike.png" id="heart-btn"/>
+                    <img src="../Asset/comment-logo.png"/>
+                    <img src="../Asset/save-logo.png" id="saved-logo"/>
+                </div>
+
+                <div class="tips-preview-content-bottom">
+                    
                     <p class="preview-bottom-caption"></p>   
               
                     <p class="tags"></p>
@@ -113,8 +165,8 @@
             </div>
         </div>        
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
     <script src="Create_Tips.js"></script>
     <script src="../Navbar/navbar.js"></script>
 </body>

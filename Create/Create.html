@@ -94,18 +94,15 @@
             -->
 
                 
-                <textarea id="txt-offerdetails" class="input-offerdetails" name="offerdetails" placeholder="Offer & Details"></textarea>
+                <textarea id="txt-offerdetails" class="input-offerdetails" name="offerdetails" placeholder="Caption"></textarea>
                 
                 
+                <p id="errorMessage"></p>
+                
+
                 <input type="file" id="attachment" placeholder="Drag or upload your attachment here" value=""
-                accept=".pdf,.docx,.xlsx,.jpg,.jpeg,.png" max="25000000"/>
-                <label for="attachment" class="attachment-box">
-                    <img src="../Asset/create-input_picture.png"/>
-                    <div class="attachment-box-info">
-                        <p><b>Drag</b> or <b>upload</b> your <b>attachments</b> here</p>
-                        <p>Upload file in PDF, DOCX, XLSX, JPG, JPEG, or PNG format (Max 25Mb)</p>
-                    </div>
-                </label>
+                accept=".pdf,.docx,.xlsx,.jpg,.jpeg,.png" max="25000000" />
+
                 <label for="picture-general" class="attachment-picture">
                     <img src="../Asset/create-picture.png"/>
                     <div class="attachment-box-info">
@@ -113,7 +110,13 @@
                         <p>Upload in file JPG, JPEG, or PNG Format (Max 25Mb)</p>
                     </div>
                 </label>
-                <br/>
+                <label for="attachment" class="attachment-box">
+                    <img src="../Asset/create-input_picture.png"/>
+                    <div class="attachment-box-info">
+                        <p><b>Drag</b> or <b>upload</b> your <b>attachments</b> here</p>
+                        <p>Upload file in PDF, DOCX, XLSX, JPG, JPEG, or PNG format (Max 25Mb)</p>
+                    </div>
+                </label>
                 <input type="file" id="picture-general"  class="logo-file-input" accept=".jpg,.jpeg,.png"/>
 
             </div>
@@ -151,7 +154,7 @@
                 <p class="caption-title"></p>-->
 
                 <div class="banner-div">
-
+                    
                 </div>
 
                 <!--
@@ -162,68 +165,7 @@
             </div>
         </div>
     </div>
-    <!--
-    <div class="tips-page" id="tips">
-        <form class="pitch-create-post">
-            <div class="pitch-fill-information">
-                <div class="judul">
-                    <h2>Fill in these informations</h2>
-                    <p>Help investors to know your idea better</p>
-                </div>
 
-                <textarea id="txt-caption" class="input-caption" name="generaldesc" maxlength="500" placeholder="Caption"></textarea>
-                <textarea id="txt-tag" class="input-tag" name="offerdetails" placeholder="Tag People"></textarea>
-
-                <input type="file" id="attachment" class="attachment-tips" placeholder="Drag or upload your attachment here" value=""
-                accept=".pdf,.docx,.xlsx,.jpg,.jpeg,.png" max="25000000"/>
-                <label for="attachment" class="attachment-box-tips attachment-box">
-                    <img src="../Asset/create-input_picture.png"/>
-                    <div class="attachment-box-info">
-                        <p><b>Drag</b> or <b>upload</b> your <b>attachments</b> here</p>
-                        <p>Upload file in PDF, DOCX, XLSX, JPG, JPEG, or PNG format (Max 25Mb)</p>
-                    </div>
-                </label>
-                <br/>
-            </div>
-            
-            <div class="button-create-post">
-                <button type="submit" class="button-create-post-btn">Create Post</button>
-            </div>
-        </form>
-        <div class="tips-preview">
-            <div class="preview-judul">
-                Preview
-            </div>
-            <div class="tips-preview-content">
-                <div class="tips-preview-content-header">
-                    <div class="tips-preview-content-header-profile">
-                        <img src="../Asset/steven.png"/>
-                        <div class="tips-preview-content-header-profile-name">
-                            <h3>Steven Nathaniel</h3>
-                            <br/>
-                            <p>Posted..ago</p>
-                        </div>
-                    </div>
-                    <div class="tips-preview-content-header-menu">
-                        <img src="../Asset/three-dot.png"/>
-                    </div>
-                </div>
-                <div class="tips-preview-content-image">
-
-                </div>
-                <div class="tips-preview-content-bottom">
-                    <div class="logo-preview-content">
-
-                    </div>
-                    <p class="preview-bottom-name">Steven Nathaniel &nbsp;</p>
-                    <p class="preview-bottom-caption"></p>   
-              
-                    <p class="tags"></p>
-                </div>
-            </div>
-        </div>        
-    </div>
--->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
     <script src="../Navbar/navbar.js"></script>
