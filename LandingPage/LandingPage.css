@@ -1,0 +1,50 @@
+header{
+    width:100vw;
+    height:10vh;
+}
+.landing_page_view_1{
+    width:100vw;
+    height:90vh;
+}
+
+.content_landing_page1{
+    width:100%;
+    height:90%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.grey_box_input{
+    width:25%;
+    height:10%;
+    background-color:#E7E4E4;
+    border-radius:5vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.email_input{
+    height:90%;
+    width:70%;
+    text-align:center;
+    border:none;
+    outline:none;
+    background-color:#E7E4E4;
+    font-size:2.5vh;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.email_input::placeholder{
+    font-size:2.5vh;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.foot_landing_page1{
+    width:100%;
+    height:10%;
+}
