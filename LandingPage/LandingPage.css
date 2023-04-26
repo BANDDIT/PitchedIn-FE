@@ -1,7 +1,23 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
 header{
     width:100vw;
     height:10vh;
 }
+
+
+/*
+TAMPILAN 1
+UNTUK
+LANDING PAGE
+*/
 .landing_page_view_1{
     width:100vw;
     height:90vh;
@@ -9,21 +25,47 @@ header{
 
 .content_landing_page1{
     width:100%;
-    height:90%;
+    height:70%;
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
 }
 
+.content_landing_page1 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vh;
+    text-align: center;
+    color: #447270;
+}
+
+.ready{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7vh;
+    color: #203D3B;
+}
+
+.future{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7vh;
+    color: #6C9493;
+}
+
 .grey_box_input{
     width:25%;
-    height:10%;
+    height:15%;
     background-color:#E7E4E4;
     border-radius:5vh;
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-top:2%;
 }
 
 .email_input{
@@ -42,9 +84,377 @@ header{
     font-size:2.5vh;
     font-family: 'Poppins';
     font-style: normal;
+    font-weight:600;
+    color: #8B8B8B;
+}
+
+.btn_getStarted{
+    background:#F6E272;
+    color:#203D3B;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:5vh;
+    width:8%;
+    height:9%;
+    border:none;
+    outline:none;
+    box-shadow: 0px 0.5vh 0.5vh rgba(0, 0, 0, 0.25);
+    margin-top:2%;
 }
 
 .foot_landing_page1{
     width:100%;
+    height:30%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.foot_box1{
+    height:60%;
+    width:24%;
+    background-color:#FFFF;
+    border-radius:10vh;
+    box-shadow:1vh 1vh 1vh #8B8B8B;
+    border: 0.3vh solid rgba(0, 0, 0, 0.1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.foot_box2{
+    height:60%;
+    width:24%;
+    background-color:#FFFF;
+    border-radius:10vh;
+    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.25);
+    border: 0.3vh solid rgba(0, 0, 0, 0.1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.foot_box3{
+    height:60%;
+    width:24%;
+    background-color:#FFFF;
+    border-radius:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.count_foot_box1{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vh;
+    color: #203D3B;
+}
+
+.investor_foot_box1{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.investor_foot_box1 h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vh;
+    color: #447270;
+}
+
+.investor_foot_box1 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    color: #447270; 
+}
+
+.foot_box_line{
+    width:0.8%;
+    height:75%;
+    background: #203D3B;
+    margin-right:8%;
+}
+
+/*
+LANDING PAGE 3
+$1000000+ INVESTED
+*/
+.landing_page3_invested{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    position:relative;
+}
+.landing_page3_left{
+    height:100%;
+    width:75%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.landing_page3_main{
+    width:80%;
+    height:90%;
+    background: linear-gradient(180deg, rgba(215, 239, 226, 0.6) 0%, rgba(242, 236, 202, 0.6) 100%);
+    border-radius:5vh;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.landing_page3_main h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14vh;
+    
+    color: #203D3B;
+}
+
+.landing_page3_main h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8vh;
+    color: #6C9493;
+}
+
+.landing_page3_main p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vh;
+    color: #6C9493;
+    width:100%;
     height:10%;
+    text-align:justify;
+}
+
+.landing_page3_main a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vh;
+    text-decoration:underline;
+    color: #6C9493;
+}
+
+.landing_page3_extraDesign1{
+    width:5%;
+    height:80%;
+    background: linear-gradient(180deg, rgba(215, 239, 226, 0.6) 0%, rgba(242, 236, 202, 0.6) 100%);
+    border-radius:10vh;
+    margin-left:2%;
+}
+.landing_page3_extraDesign2{
+    width:5%;
+    height:60%;
+    background: linear-gradient(180deg, rgba(215, 239, 226, 0.6) 0%, rgba(242, 236, 202, 0.6) 100%);
+    border-radius:10vh;
+    margin-left:2%;
+
+}
+.landing_page3_value{
+    width:100%;
+    height:25%;
+    background:#E9ECDB;
+    border-radius:5vh;
+    box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.25);
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.value_section{
+    height:85%;
+    width:20%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.value_section img{
+    height:90%;
+    width:100%;
+}
+
+.value_section p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vh;
+    text-align:center;
+    color: #4A4C4D;
+    height:10%;
+    width:100%;
+
+}
+
+.landing_page3_frame{
+    width:100%;
+    height:80%;
+    display:flex;
+}
+
+
+.landing_page3_right{
+    width:35vw;
+    height:65vh;
+    margin-top:25vh;
+    margin-left:65%;
+    position:absolute;
+    display:flex;
+}
+
+.left_btn_lp3{
+    width:5%;
+    height:100%;
+    background:red;
+}
+
+.right_btn_lp3{
+    width:5%;
+    height:100%;
+    background:red;
+}
+
+.landing_page3_slider{
+    height:100%;
+    width:90%;
+    display:flex;
+}
+
+
+
+/*
+FOOTER 
+LANDING PAGE
+*/
+
+.footer{
+    height:35vh;
+    width:100vw;
+    background: #203D3B;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.footer_left{
+    width:60%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-right:8%;
+}
+
+.footer_left h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 3vh;
+    color:white;
+}
+
+.footer_left a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    margin-top:12%;
+}
+
+.footer_features{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    height:73%;
+    width:fit-content;
+    margin-left:10%;
+    /*margin-left:10%;*/
+}
+
+.footer_helpSupport{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    height:73%;
+    width:fit-content;
+    /*margin-left:10%;*/
+
+}
+
+.footer_followUs{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    height:73%;
+    width:fit-content;
+    /*margin-left:10%;*/
+}
+
+.footer_right{
+    width:45%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer_right h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 10vh;
+    color: #FFFFFF;
+}
+
+.footer_right p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    color: #FFFFFF;
+}
+
+.footer_white_line{
+    width:0.2%;
+    height:80%;
+    background: white;
+    border-radius:5vh;
+}
+
+.logo_pitchedin_footer{
+    width:50%;
+    height:20%;
 }
