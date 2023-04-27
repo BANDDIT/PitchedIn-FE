@@ -4,6 +4,7 @@ let dropDown_img = document.getElementById('dropDown-img');
 let showDrop = document.querySelector('.dropDown-konten-group');
 
 dropDown_circle.addEventListener('click',function(e){
+    e.preventDefault();
     if(showDrop.style.opacity==0){
         showDrop.style.opacity=1;
         showDrop.style.pointerEvents='auto';
