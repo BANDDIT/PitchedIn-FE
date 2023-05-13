@@ -8,73 +8,24 @@
 }
 
 
-/*NAVBAR*/
-
-header{
-    height:70px;
-    width:100%;
+body{
+    width:100vw;
+    height:100vh;
+    padding-bottom:2%;
 }
 
-.nav{
-    font-size:16px;
-}
-
-.pp-circle{
-    height:50px;
-    width:50px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.pp-circle img{
-    height:48.5px;
-    width:48.5px;
-}
-
-#hi-p{
-    font-size:16px;
-}
-
-#name-p{
-    font-size:16px;
-}
-
-#dropDown-circle{
-    height:18px;
-    width:18px;
-    background:white;
-}
-
-
-/*
-LOGIN 
-CSS
-*/
 
 .content-box{
-    /*
     width:71%;
     height:80%;
     margin-left:14.5%;
-    margin-right:14.5%;*/
-    /* margin-bottom:100px; 
-    width:100%;
-    height:fit-content;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    */
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    margin-right:14.5%; 
+    /* margin-bottom:100px; */
 
 }
 
 .login-box{
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -82,12 +33,12 @@ CSS
     background: rgba(68, 114, 112, 0.08);
     /* background:black; */
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
-    width:940px;
-    height:430px;
-    margin-top:20px;
+    width:100%;
+    height:100%;
+    margin-top:30px;
     
     border-radius:50px;
-    margin-bottom:10px;
+    margin-bottom:20px;
 
 
 }
@@ -174,7 +125,7 @@ CSS
 
 .login-auth-username-box{
     display:flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:center;
     width: 90%;
     height: 80px;
@@ -197,7 +148,7 @@ CSS
 .login-auth-password-box{
     margin-top:2%;
     display:flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:center;
     width: 90%;
     height: 80px;
@@ -217,7 +168,7 @@ CSS
 .login-auth-username-box img{
     width:30px;
     height:30px;
-    margin-left:4%;
+    margin-left:2%;
     margin-right:2%;
 }
 
@@ -225,62 +176,34 @@ CSS
     border:none;
     outline:none;
     height:85%;
-    width:80%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    color:black;
-}
-
-.login-auth-username-box input::placeholder{
-    border:none;
-    outline:none;
-    height:85%;
     width:85%;
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    color:#C0C5C4;
+    font-size: 24px;
 }
 
 .login-auth-password-box img{
     width:30px;
     height:30px;
-    margin-left:4%;
+    margin-left:2%;
     margin-right:2%;
 }
 
 .login-auth-password-box input{
     border:none;
     outline:none;
-    height:80%;
-    width:85%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    color:black;
-}
-
-.login-auth-password-box input::placeholder{
-    border:none;
-    outline:none;
     height:85%;
     width:85%;
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    color:#C0C5C4;
+    font-size: 24px;
 }
 
-
-
 .login-btn{
-    width:25%;
-    height:12%;
+    width:30%;
+    height:8%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -302,14 +225,14 @@ CSS
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size:18px;
+    font-size:25px;
 }
 
 #forgotPassword{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 24px;
 
     color: #6C9493;
@@ -336,14 +259,13 @@ CSS
 }
 
 .ContinueWithGoogle-btn{
-    width: 60%;
+    width: 70%;
     height: 56px;
     display:flex;
     justify-content:center;
     align-items:center;
     background: #FF8273;
     border-radius: 30px;
-    margin-top:1%;
 }
 
 .ContinueWithGoogle-btn:hover{
@@ -354,20 +276,20 @@ CSS
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
 }
 
 .ContinueWithFacebook-btn{
-    width: 60%;
+    width: 70%;
     height: 56px;
     display:flex;
     justify-content:center;
     align-items:center;
     background: #40648F;
     border-radius: 30px;
-    margin-top:2%;
+    margin-top:1%;
 }
 
 .ContinueWithFacebook-btn:hover{
@@ -379,7 +301,7 @@ CSS
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 29px;
 
     color: #FFFFFF;
@@ -400,11 +322,10 @@ CSS
 }
 
 .add-info{
-    width:940px;
     text-align:right;
     display:flex;
     flex-direction:column;
-    font-size:15px;
+    font-size:125%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -424,49 +345,47 @@ CSS
 /*MODAL*/
 .modal{
     position:fixed;
-    top:0;
-    left:0;
     width:100vw;
     height:100vh;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
     background: rgba(0, 0, 0, 0.51);
     opacity:0;
     pointer-events: none;
     transition :0.4s;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
 #modal_errorMessage{
     color:red;
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 15px;
-    /*
-    margin-top:-12%;*/
-    margin-top:-8.5%;
+    font-size: 20px;
+    margin-top:-12%;
     display:none;
 }
 
 .modal-box-bottom{
     display:none;
     pointer-events:none;
-    margin-top:-8.5%;
+    margin-top:-12%;
 }
 
 .modal-box{
-    /*
     width:40%;
-    height:50%;*/
-    width:500px;
-    height:300px;
+    height:50%;
     background-color:white;
+    margin-top:10%;
+    margin-left:29%;
     border-radius:30px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
     padding-bottom:15px;
+    /* padding-top:30px;
+    padding-left:25px; */
 }
 
 .modal-box-up{
@@ -521,27 +440,22 @@ CSS
 }
 
 .enter-email-box{
+    font-family: 'Montserrat';
+    font-style: normal;
     background-color: #6C9493;
     display:flex;
     border-radius:30px;
     width:95%;
     justify-content:center;
     align-items:center;
+    color:white;
     padding:5px;
-    margin-top:5%;
     margin-bottom:15%;
 }
 
-.enter-email-box input{
-    font-family: 'Montserrat';
-    font-style: normal;
-    color:white;
-
-}
-
 .enter-email-box input::placeholder{
-    font-family: 'Montserrat';
-    font-style: normal;
+    color:white;
+    font-weight:100;
 }
 
 .enter-email-text{
@@ -576,13 +490,10 @@ CSS
 }
 
 .resend-link-black{
-    font-size:15px;
     color:black;
     cursor: default;
 }
 
 .resend-link-green{
-    font-size:15px;
     color:#6C9493;
 }
-

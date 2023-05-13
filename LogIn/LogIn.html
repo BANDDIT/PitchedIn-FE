@@ -10,18 +10,17 @@
     <link rel="stylesheet" href="LogIn.css">
 </head>
 <body>
+
     <header>
+        
         <a href="#">
             <img src="../Asset/logo_pitchedin.png" id="logo"/>
         </a>
-        
         <div id="nav-group">
             <a href="#" class="nav">Explore</a>
-            <!-- <a href="#" class="nav">Create</a> -->
             <a href="#" class="nav">Forum</a>
             <a href="#" class="nav">Tips</a>        
         </div>
-
         <div id="auth-group">
             <a href="../SignUp/SignUp.html" class="auth">    
                 <p>Sign Up</p>
@@ -29,21 +28,19 @@
             <a href="../LogIn/LogIn.html" class="auth">
                 <p>Log In</p>       
             </a>
+        </div>
     </header>
+
 
     <div class="content-box">
         <form class="login-box">
-   
-            <!-- <img src="../Asset/login-pict.png" class="login-pic-img" /> -->
             <div class="login-pic-img">
                 <img src="../Asset/logo_pitchedin.png" class="logo-pitchedin"/>
             </div>
             <div class="login-auth">
-
                 <div class="login-auth-h1">
                     <h1>WELCOME</h3>
                 </div>
-                
                 <hr>
                 <div class="login-auth-username-box">
                     <img src="../Asset/username-logo.png"  />
@@ -54,81 +51,62 @@
                     <input type="password" id="password" name="password" placeholder="Enter your password"/>
 
                 </div>
-                
                 <p class="errorMessage"></p>
-
                 <a href="#" id="forgotPassword">forgot password?</a>
-    
                 <button type="submit" id="login-btn" class="login-btn">
                     <p>Login</p>
                 </button>
-                
-                
                 <p id="or">or</p>
-    
                 <div class="ContinueWithGoogle-btn">
                     <p>Continue with Google</p>
                 </div>
-    
                 <div class="ContinueWithFacebook-btn">
                     <p>Continue with Facebook</p>
                 </div>
-                <!-- <img src="../Asset/logo_pitchedin.png" class="logo_pitchedin"/> -->
-
-            </form>
-
-        </div>
-    
-    
+            </div>
+        </form>
         <div class="add-info">
             <p>By continuing, you agree to PitchedIn’s Terms of Service & Privacy Policy</p>
             <p>Not on PitchedIn yet?&nbsp; <a href="../SignUp/SignUp.html" class="sign-up-btn">Sign Up</a></p>
         </div>
+    </div> 
+    
 
-
-        <div class="modal">
-            <div class="modal-box">
-
-                <div class="modal-box-up">
-                    <div class="modal-box-up-konten">
-                        <h2 class="modal-first-h2">Oops, Did You Forget</h2>
-                        <h2 class="modal-second-h2">Your Password?</h2>
-        
-
-                        <div class="model-box-up-konten-info-group">
-                            <p class="model-box-up-konten-info">Tell us your email, and we will send you a link</p>
-                            <p class="model-box-up-konten-info">to reset your password!</p>
-                        </div>
-
-                    </div>
-
-                    <div class="modal-box-up-close" id="close-modal">
-                        <img src="../Asset/close.png"/>
-                    </div>
-
-                </div>
-
-               
-                <form class="enter-email-box"method="POST">    
-                    <input type="email" id="email" name="email" class="enter-email-text" placeholder="Enter your email"/>
-                    <button type="submit" id="enter-email-btn" class="enter-email-btn">
-                        <img src="../Asset/right-arrow.png"/>
-                    </button>
-                </form>
-
-                <p id="modal_errorMessage"></p>
-                
-
-                <div class="modal-box-bottom">   
-                    <div class="resend-link">
-                        <p class="resend-link-black" id="resend-btn">Resend Link&nbsp;</p>
-                        <p class="resend-link-green" id="modal-timer"></p>
+    
+    <div class="modal">
+        <div class="modal-box">
+            <div class="modal-box-up">
+                <div class="modal-box-up-konten">
+                    <h2 class="modal-first-h2">Oops, Did You Forget</h2>
+                    <h2 class="modal-second-h2">Your Password?</h2>
+                    <div class="model-box-up-konten-info-group">
+                        <p class="model-box-up-konten-info">Tell us your email, and we will send you a link</p>
+                        <p class="model-box-up-konten-info">to reset your password!</p>
                     </div>
                 </div>
+                <div class="modal-box-up-close" id="close-modal">
+                    <img src="../Asset/close.png"/>
+                </div>
+            </div>
 
+            <form class="enter-email-box"method="POST">    
+                <input type="email" id="email" name="email" class="enter-email-text" placeholder="Enter your email"/>
+                <button type="submit" id="enter-email-btn" class="enter-email-btn">
+                    <img src="../Asset/right-arrow.png"/>
+                </button>
+            </form>
+
+            <p id="modal_errorMessage"></p>
+
+            <div class="modal-box-bottom">   
+                <div class="resend-link">
+                    <p class="resend-link-black" id="resend-btn">Resend Link&nbsp;</p>
+                    <p class="resend-link-green" id="modal-timer"></p>
+                </div>
             </div>
         </div>
     </div>
+
    
 
     <script src="LogIn.js"></script>
