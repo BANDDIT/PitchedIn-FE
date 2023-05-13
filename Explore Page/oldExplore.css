@@ -16,44 +16,6 @@ body{
 
 }
 
-/*NAVBAR*/
-
-header{
-    height:70px;
-    width:100%;
-}
-
-.nav{
-    font-size:16px;
-}
-
-.pp-circle{
-    height:50px;
-    width:50px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.pp-circle img{
-    height:48.5px;
-    width:48.5px;
-}
-
-#hi-p{
-    font-size:16px;
-}
-
-#name-p{
-    font-size:16px;
-}
-
-#dropDown-circle{
-    height:18px;
-    width:18px;
-    background:white;
-}
-
 
 /*
 CSS
@@ -61,43 +23,36 @@ FOR
 EXPLORE PAGE1
 */
 .back{
-    z-index:1;
-    height:3rem;
     width:100%;
+    height:100px;
     display:flex;
-    padding-left:1rem;
-    justify-content:center;
     align-items:center;
-}
-
-.back_content{
-    height:100%;
-    width:1230px;
-    display:flex;
     justify-content:flex-start;
-    align-items:center;
 }
-
-.back_btn{
-    cursor:pointer;
-    width:1.5rem;
-    height:1.5rem;
+.back img{
+    margin-left:30px;
+    height:40px;
+    width:40px;
 }
-
 
 .explore_page1{
     display:flex;
     align-items:flex-start;
     justify-content:center;
 }
+
 .explore_left{
     height:fit-content;
     width:fit-content;
+    width:500px;
 }
 
 .user_profile1{
-    width: 280px;
-    height: 320px;
+    width: 470px;
+    height: 400px;
+    left: 26px;
+    top: 219px;
+
     background: #FFFFFF;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -111,8 +66,8 @@ EXPLORE PAGE1
 .color_circle_pp{
     position:relative;
     background: linear-gradient(180deg, #E2FFFD 0%, #FCF6D8 97.4%);  
-    width:70px;
-    height:70px;
+    width:130px;
+    height:130px;
     border-radius:100%;
     display:flex;
     align-items:center;
@@ -121,8 +76,8 @@ EXPLORE PAGE1
 
 .white_circle_pp{
     background:white;
-    width:64px;
-    height:64px;
+    width:122px;
+    height:122px;
     border-radius:100%;
     display:flex;
     align-items:center;
@@ -131,13 +86,13 @@ EXPLORE PAGE1
 
 .white_circle_pp img{
     border-radius:100%;
-    width:61px;
-    height:61px;
+    width:116px;
+    height:116px;
 }
 
 .online_status{
-    height:15px;
-    width:15px;
+    height:24px;
+    width:24px;
     background:white;
     border-radius:100%;
     position:absolute;
@@ -149,10 +104,12 @@ EXPLORE PAGE1
 }
 
 .online_green{
-    height:13px;
-    width:13px;
+    height:20px;
+    width:20px;
     background:#3EC786;
     border-radius:100%;
+    margin-left:1px;
+    margin-top:1px;
 }
 
 .user_data{
@@ -168,7 +125,7 @@ EXPLORE PAGE1
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 30px;
     color: #447270;
 }
@@ -177,7 +134,7 @@ EXPLORE PAGE1
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 18px;
     color: #6C9493;
 }
@@ -186,7 +143,7 @@ EXPLORE PAGE1
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
     color: #6C9493;
     text-align:center;   
@@ -197,8 +154,8 @@ EXPLORE PAGE1
 }
 
 .connect_and_chat img{
-    width:22px;
-    height:22px;
+    width:30px;
+    height:30px;
     margin-left:1rem;
 }
 
@@ -210,31 +167,31 @@ EXPLORE PAGE1
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 21px;
     color: #F1F1F1;
-    height:22px;
-    width:85px;
+    height:30px;
+    width:100px;
     border-radius:20px;
 }
 
 .bottom_explore_left{
     display:flex;
     flex-direction:column;
-    width: 280px;
+    width: 470px;
     height:fit-content;
     height:100px;
     overflow-wrap:break-word;
-    margin-top:0.3rem;
+    margin-top:1rem;
 }
 
 .bottom_explore_left ul{
     display:flex;
-    width:280px;
+    width:470px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 18px;
     color: #6C9493;
     overflow-wrap:break-word;
@@ -242,44 +199,26 @@ EXPLORE PAGE1
 }
 
 .bottom_explore_left ul li{
+    margin-left:3rem;
     overflow-wrap:break-word;
-    margin-left:25px;
 }
 
-/*
-    width:900px;
-    height:fit-content;
-    max-height:79vh;
-    overflow-y:scroll;
-    padding-top:1rem;
-    padding-bottom:1rem;
-    padding-left:2.5rem;
-    padding-right:2.5rem;
-    background: #FFFFFF;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
-    border-radius:30px;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items:flex-start;
-    margin-left:1rem;
-*/
 
 .explore_right{
-    width:900px;
+    width:1200px;
     height:fit-content;
-    max-height:79vh;
+    height:75vh;
+    max-height:1200px;
     background:white;
     margin-left:20px;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+    padding-left:2rem;
+    padding-right:2rem;
     padding-top:1rem;
     padding-bottom:1rem;
-    padding-left:2.5rem;
-    padding-right:2.5rem;
     overflow-y:scroll;
 }
-
 
 .explore_right img{
     width:100%;
@@ -370,7 +309,7 @@ EXPLORE PAGE1
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 21px;
     color: #6C9493;
 }
@@ -379,7 +318,7 @@ EXPLORE PAGE1
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 36px;
     color: #6C9493;
 }
@@ -425,7 +364,7 @@ EXPLORE PAGE 2
 }
 
 .explore_page2_left{
-    width:900px;
+    width:950px;
     height:84vh;
     overflow-y:scroll;
     display:flex;
@@ -449,44 +388,23 @@ EXPLORE PAGE 2
     display:flex;
     align-items:center;
     justify-content:flex-start;
-
-    height:3rem;
-    width:100%;
-    margin-bottom:1.5rem;
-}
-
-.search_bar_inside{
-    width: 300px;
-    height: 34px; 
     background:white;
-    margin-left:85px;
+    height:3rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
     border-radius:30px;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
+    margin-bottom:1rem;
+    margin-left:145px;
 }
 
 .search_bar img{
-    width:1rem;
-    height:1rem;
-    margin-left:1rem;
+    width:2rem;
+    height:2rem;
 }
 
 .search_bar input{
-    border:none;
-    outline:none;
-    margin-left:6px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 30px;
-    color: #333333;
-    height:2rem;
-    width:15rem;
-}
-/*
-.seach_bar input{
     border:none;
     outline:none;
     margin-left:1rem;
@@ -495,19 +413,29 @@ EXPLORE PAGE 2
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    height:10rem;
-    width:100px;
+    color: #333333;
+    height:2rem;
+    width:20rem;
+}
+
+.seach_bar input{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
     color: #4A4A4A;
 }
-*/
+
 .postingan_explore2{
     width:100%;
     height:fit-content;
     display:flex;
+    margin-top:1rem;
 }
 
 .postingan_explore2_content{
-    width:820px;
+    width:793px;
     height:fit-content;
     background:white;
     border-radius:30px;
@@ -517,7 +445,6 @@ EXPLORE PAGE 2
     padding-bottom:2rem;
     margin-left:1rem;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom:1rem;
 }
 
 .postingan_explore2_content hr{
@@ -568,8 +495,8 @@ EXPLORE PAGE 2
 }
 
 .suggestions{
-    width: 132px;
-    height: 34px;   
+    width: 201px;
+    height: 44px;   
     background: #6C9493;
     border-radius: 50px;
     display:flex;
@@ -578,17 +505,15 @@ EXPLORE PAGE 2
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 30px;
     color: #F1F1F1;
 }
 
 .user_reccomendations{
-    margin-top:1.5rem;
-    width:290px;
-  
-    height:52vh;
-
+    margin-top:2.5rem;
+    width:450px;
+    height:450px;
     background:white;
     border-radius:40px;
     padding:1rem;
@@ -604,7 +529,7 @@ EXPLORE PAGE 2
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 30px;
     color: #203D3B;
 }
@@ -613,13 +538,13 @@ EXPLORE PAGE 2
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
     color: #6C9493;
 }
 
 .reccomendation_data{
-    height:110px;
+    height:130px;
     width:fit-content;
     display:flex;
     flex-direction:column;
@@ -629,8 +554,8 @@ EXPLORE PAGE 2
 }
 
 .user_reccomendations hr{
-    margin-top:0.5rem;
-    margin-bottom:0.5rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
 }
 
 
@@ -641,36 +566,39 @@ MESSAGE
 */
 
 .message{
-    width:290px;
-    height:55px;
+    width:450px;
+    height:60px;
     position:fixed;
     bottom:0;
-    right:37px;
-    background:white;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding-left:0.5rem;
-    padding-right:1rem;
-    pointer-events:auto;
-    box-shadow: -6px -4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.message_up{
-    pointer-events:none;
-    width:290px;
-    height:400px;
-    /*
-    height:fit-content;*/
-    position:fixed;
-    bottom:0;
-    right:37px;
     background:white;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     /*margin-left:965px;*/
+    right:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    pointer-events:auto;
+    box-shadow: -6px -4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.message_up{
+    pointer-events:none;
+    width:450px;
+    height:700px;
+    /*
+    height:fit-content;*/
+    position:fixed;
+    bottom:0;
+    background:white;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    /*margin-left:965px;*/
+    right:20px;
     display:none;
     align-items:center;
     flex-direction:column;
@@ -690,34 +618,32 @@ MESSAGE
 .message_data{
     display:flex;
     align-items:center;
-    width:275px;
 }
 
 .message_data h3{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;  
     color: #203D3B;
     margin-left:1rem;
 }
 
 .color_pp_message{
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     background: linear-gradient(180deg, #E2FFFD 0%, #FCF6D8 97.4%);
     border-radius:100%;
     display:flex;
     align-items:center;
     justify-content:center;
     position:relative;
-    margin-left:5px;
 }
 
 .white_pp_message{
-    width:44px;
-    height:44px;
+    width:47px;
+    height:47px;
     border-radius:100%;
     background:white;
     display:flex;
@@ -726,8 +652,8 @@ MESSAGE
 }
 
 .white_pp_message img{
-    width:40px;
-    height:40px;
+    width:45px;
+    height:45px;
     border-radius:100%;
 }
 
@@ -740,8 +666,8 @@ MESSAGE
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-left:33px;
-    margin-top:30px;
+    margin-left:38px;
+    margin-top:25px;
 }
 
 .message_pp_online_green{
@@ -753,36 +679,14 @@ MESSAGE
 
 .message_menu{
     height:41px;
-    width:130px;
+    width:254px;
     display:flex;
     align-items:center;
     justify-content:flex-end;
 }
 
 .message_menu img{
-    margin-left:0.4rem;
-    margin-right:0.4rem;
-    cursor:pointer;
-}
-
-#menu_edit{
-    width:1rem;
-    height:1rem;
-}
-
-#menu_up{
-    width:0.8rem;
-    height:0.5rem;
-}
-
-#menu_three{
-    height:0.4rem;
-    width:1.2rem;
-}
-
-#menu_down{
-    height:0.6rem;
-    width:0.8rem;    
+    margin-left:1rem;
 }
 
 .message_search_form{
@@ -796,15 +700,14 @@ MESSAGE
 }
 
 .message_search_form img{
-    width:20px;
-    height:20px;
-    margin-left:0.2rem;
+    width:25px;
+    height:25px;
 }
 
 .message_search_bar{
     background:#F1F1F1;
-    width:240px;
-    height:34px;
+    width:470px;
+    height:35px;
     border-radius:30px;
     margin-right:0.2rem;
     display:flex;
@@ -816,36 +719,35 @@ MESSAGE
 }
 
 .message_search_bar img{
-    width:1rem;
-    height:1rem;
-    margin-left:0.05rem;
+    width:30px;
+    height:25px;
 }
 
 .message_search_bar input{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 17px;
     color: #6C9493;
     border:none;
     outline:none;
     background:#F1F1F1;
-    margin-left:0.5rem;
-    width:180px;
+    margin-left:1rem;
+    width:320px;
 }
 
 .message_search_bar input::placeholder{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 17px;
     color: #6C9493;
 }
 
 .user_chat{
-    height:92px;
+    height:100px;
     width:100%;
     display:flex;
     align-items:center;
@@ -860,7 +762,7 @@ MESSAGE
 
 .user_chat_name{
     height:100%;
-    width:120px;
+    width:240px;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
@@ -872,7 +774,7 @@ MESSAGE
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 17px;
     color: #203D3B;
     margin-top:0.5rem;
@@ -883,14 +785,14 @@ MESSAGE
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    text-align:justify;
+    font-size: 15px;
+    line-height: 16px;
     color: #6C9493;
 }
 
 .color_pp_user_chat{
-    width:70px;
-    height:70px;
+    width:90px;
+    height:90px;
     background: linear-gradient(180deg, #E2FFFD 0%, #FCF6D8 97.4%);
     border-radius:50%;
     display:flex;
@@ -900,8 +802,8 @@ MESSAGE
 }
 
 .white_user_chat{
-    width:64px;
-    height:64px;
+    width:84px;
+    height:84px;
     background:white;
     border-radius:50%;
     display:flex;
@@ -910,40 +812,40 @@ MESSAGE
 }
 
 .white_user_chat img{
-    width:61px;
-    height:61px;
+    width:80.5px;
+    height:80.5px;
     border-radius:50%;
 }
 
 .date_notif{
     height:100px;
-    width:120px;
+    width:84px;
     display:flex;
     flex-direction:column;
     align-items:flex-end;
     justify-content:flex-start;
-    margin-right:0.1rem;
+    margin-right:1rem;
 }
 
 .date_notif h2{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 15px;
     color: #203D3B;
-    margin-top:0.85rem;
+    margin-top:0.5rem;
 }
 
 .notif{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 12px;
     color: #FFFFFF;
-    width:22px;
-    height:22px;
+    width:30px;
+    height:30px;
     background: #447270;
     border-radius:50%;
     display:flex;
@@ -953,21 +855,21 @@ MESSAGE
 }
 
 .message_online_status{
-    height:15px;
-    width:15px;
+    width:22px;
+    height:22px;
     background:white;
-    border-radius:100%;
+    border-radius:50%;
     position:absolute;
-    margin-top:65%;
-    margin-left:65%;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
+    margin-left:65px;
+    margin-top:50px;
 }
 
 .message_online_green{
-    height:12px;
-    width:12px;
+    width:19px;
+    height:19px;
     background:#3EC786;
-    border-radius:100%;
+    border-radius:50%;
 }

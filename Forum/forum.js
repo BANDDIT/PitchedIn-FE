@@ -12,13 +12,20 @@ for(let i=0;i<heart.length;i++){
 
 let input_forum = document.querySelector('.input_forum');
 let numberOfChar = document.querySelector('.numberOfChar');
+let input_forum_length = input_forum.value.length;
+if(input_forum_length>200){
+    input_forum.value = input_forum.value.substring(0,200);
+}
+else{
+    numberOfChar.innerHTML = input_forum_length.toString() + "/200";
+}
 input_forum.addEventListener('input',function(e){
-    let input_forum_length = input_forum.value.length;
+    input_forum_length = input_forum.value.length;
     if(input_forum_length>200){
         input_forum.value = input_forum.value.substring(0,200);
     }
     else{
-        numberOfChar.innerHTML = input_forum_length.toString() + " /200";
+        numberOfChar.innerHTML = input_forum_length.toString() + "/200";
     }
 });
 
