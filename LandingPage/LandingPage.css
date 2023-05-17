@@ -7,12 +7,49 @@
     background-color: transparent;
 }
 
+
+
+/*NAVBAR*/
+
 header{
-    width:100vw;
-    height:10vh;
+    height:70px;
+    width:100%;
     position:fixed;
-    z-index:3;
+    z-index:10;
 }
+
+.nav{
+    font-size:16px;
+}
+
+.pp-circle{
+    height:50px;
+    width:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.pp-circle img{
+    height:48.5px;
+    width:48.5px;
+}
+
+#hi-p{
+    font-size:16px;
+}
+
+#name-p{
+    font-size:16px;
+}
+
+#dropDown-circle{
+    height:18px;
+    width:18px;
+    background:white;
+}
+
+
 
 
 /*
@@ -20,6 +57,8 @@ TAMPILAN 1
 UNTUK
 LANDING PAGE
 */
+
+
 .landing_page_view_1{
     width:100vw;
     height:100vh;
@@ -39,16 +78,17 @@ LANDING PAGE
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 2vh;
+    font-size: 15px;
     text-align: center;
     color: #447270;
 }
 
 .ready{
+    margin-top:20px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 7vh;
+    font-size:45px;
     color: #203D3B;
 }
 
@@ -56,15 +96,16 @@ LANDING PAGE
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 7vh;
+    font-size: 45px;
     color: #6C9493;
+    transition:2s ease-in-out;
 }
 
 .grey_box_input{
-    width:25%;
-    height:15%;
+    width:300px;
+    height:50px;
     background-color:#E7E4E4;
-    border-radius:5vh;
+    border-radius:30px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -78,13 +119,13 @@ LANDING PAGE
     border:none;
     outline:none;
     background-color:#E7E4E4;
-    font-size:2.5vh;
+    font-size:15px;
     font-family: 'Poppins';
     font-style: normal;
 }
 
 .email_input::placeholder{
-    font-size:2.5vh;
+    font-size:15px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight:600;
@@ -96,9 +137,9 @@ LANDING PAGE
     display:flex;
     align-items:center;
     justify-content:center;
-    border-radius:5vh;
-    width:8%;
-    height:9%;
+    border-radius:30px;
+    width:100px;
+    height:35px;
     box-shadow: 0px 0.5vh 0.5vh rgba(0, 0, 0, 0.25);
     margin-top:2%;
     cursor:pointer;
@@ -108,7 +149,7 @@ LANDING PAGE
 .btn_getStarted button{
     width:100%;
     height:100%;
-    border-radius:5vh;
+    border-radius:30px;
     display:flex;
     align-items:center;
     justify-content:center;    
@@ -119,7 +160,7 @@ LANDING PAGE
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 2vh;
+    font-size: 12px;
     text-decoration:none;
 }
 
@@ -127,13 +168,13 @@ LANDING PAGE
     width:100%;
     height:30%;
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
 }
 
 .foot_box1{
-    height:60%;
-    width:24%;
+    width:270px;
+    height:100px;
     background-color:#FFFF;
     border-radius:10vh;
     box-shadow:1vh 1vh 1vh #8B8B8B;
@@ -144,8 +185,8 @@ LANDING PAGE
 }
 
 .foot_box2{
-    height:60%;
-    width:24%;
+    width:285px;
+    height:100px;
     background-color:#FFFF;
     border-radius:10vh;
     box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.25);
@@ -153,11 +194,13 @@ LANDING PAGE
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-right:0.7rem;
+    margin-left:0.7rem;
 }
 
 .foot_box3{
-    height:60%;
-    width:24%;
+    width:290px;
+    height:100px;
     background-color:#FFFF;
     border-radius:10vh;
     display:flex;
@@ -174,7 +217,7 @@ LANDING PAGE
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 4vh;
+    font-size:25px;
     color: #203D3B;
 }
 
@@ -191,7 +234,7 @@ LANDING PAGE
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 16px;
     color: #447270;
 }
 
@@ -199,7 +242,7 @@ LANDING PAGE
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 2vh;
+    font-size: 12px;
     color: #447270; 
 }
 
@@ -212,14 +255,15 @@ LANDING PAGE
 
 /*LANDING PAGE 2
 DISCOVER*/
+
 .landing_page_view_2{
     width:100vw;
-    height:100vh;
+    height:90vh;
     background-image:url("../Asset/lp2_background.png");
     background-size:cover;
     display:flex;
     justify-content:center;
-    align-items:flex-end;
+    align-items:center;
     padding-left:6%;
     padding-right:4%;
     padding-top:4%;
@@ -237,9 +281,9 @@ DISCOVER*/
 
 .lp2_left a{
     margin-top:-8%;
-    width:30%;
-    height:10%;
-    border-radius:10vh;
+    width:165px;
+    height:50px;
+    border-radius:30px;
     background: #F6E272;
     display:flex;
     justify-content:center;
@@ -249,6 +293,7 @@ DISCOVER*/
     font-style: normal;
     font-weight: 600;
     font-size: 2.5vh;
+    font-size:15px;
     text-decoration-line: underline;
     cursor:pointer;
 }
@@ -277,7 +322,7 @@ DISCOVER*/
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 9vh;
+    font-size:50px;
     color: #447270;
 }
 
@@ -300,7 +345,7 @@ DISCOVER*/
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 7vh;
+    font-size:40px;
     color: #6C9493;
 }
 
@@ -308,16 +353,16 @@ DISCOVER*/
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 3vh;
+    font-size:17px;
     color: #000000;
 }
 
 .lp2_design_symbol{
-    width:100%;
-    height:23%;
+    width:545px;
+    height:110px;
     background: #F0F0E2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius:10vh;
+    border-radius:50px;
     display:flex;
     align-items:center;
     justify-content:space-around;
@@ -352,6 +397,8 @@ DISCOVER*/
     margin-top:10%;
     width:100%;
     height:60%;
+    width:545px;
+    height:270px;
 }
 
 
@@ -360,6 +407,11 @@ DISCOVER*/
 LANDING PAGE 3
 $1000000+ INVESTED
 */
+.landing_page_view_3_parent{
+    width:100vw;
+    height:100vh;
+}
+
 .landing_page_view_3{
     width:100vw;
     height:100vh;
@@ -373,27 +425,37 @@ $1000000+ INVESTED
     justify-content:center;
     align-items:center;
 }
+
 .landing_page3_main{
-    width:80%;
-    height:90%;
+    width:750px;
+    height:500px;
+    width:54vw;
+    height:89vh;
     background: linear-gradient(180deg, rgba(215, 239, 226, 0.6) 0%, rgba(242, 236, 202, 0.6) 100%);
     border-radius:5vh;
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
+    justify-content:center;
+    margin-left:12px;
+    padding-bottom:12px;
+    padding-top:12px;
+}
+
+.landing_page3_main_content{
+    display:flex;
+    flex-direction:column;
     justify-content:space-between;
-    padding-left:10%;
-    padding-right:10%;
-    padding-top:5%;
-    padding-bottom:5%;
+    align-items:flex-start;
+    width:550px;
+    height:450px;
 }
 
 .landing_page3_main h1{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 14vh;
-    
+    font-size:70px;
     color: #203D3B;
 }
 
@@ -401,7 +463,7 @@ $1000000+ INVESTED
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 8vh;
+    font-size:40px;
     color: #6C9493;
 }
 
@@ -410,9 +472,8 @@ $1000000+ INVESTED
     font-style: normal;
     font-weight: 500;
     font-size: 3vh;
+    font-size:17px;
     color: #6C9493;
-    width:100%;
-    height:10%;
     text-align:justify;
 }
 
@@ -420,14 +481,14 @@ $1000000+ INVESTED
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 3vh;
+    font-size:17px;
     text-decoration:underline;
     color: #6C9493;
 }
 
 .landing_page3_extraDesign1{
-    width:5%;
-    height:80%;
+    width:4vw;
+    height:76vh;
     background: linear-gradient(180deg, rgba(215, 239, 226, 0.6) 0%, rgba(242, 236, 202, 0.6) 100%);
     border-radius:10vh;
     margin-left:2%;
@@ -443,6 +504,8 @@ $1000000+ INVESTED
 .landing_page3_value{
     width:100%;
     height:25%;
+    width:550px;
+    height:100px;
     background:#E9ECDB;
     border-radius:5vh;
     box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.25);
@@ -470,7 +533,7 @@ $1000000+ INVESTED
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 2vh;
+    font-size:13px;
     text-align:center;
     color: #4A4C4D;
     height:10%;
@@ -479,17 +542,16 @@ $1000000+ INVESTED
 }
 
 .landing_page3_frame{
-    width:100%;
-    height:80%;
+    width:450px;
+    height:310px;
     display:flex;
 }
 
 
 .landing_page3_right{
+    left:63%;
+    height:100%;
     width:35vw;
-    height:65vh;
-    margin-top:22vh;
-    margin-left:64%;
     position:absolute;
     display:flex;
     flex-direction:column;
@@ -502,9 +564,9 @@ $1000000+ INVESTED
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 3vh;
+    font-size:16px;
     color: #6C9493;
-    margin-top:-5%;
+    margin-top:-20px;
 }
 
 .left_btn_lp3{
@@ -552,7 +614,7 @@ $1000000+ INVESTED
 .landing_page3_slide{
     width:100%;
     height:100%;
-    border-radius:2vh;
+    border-radius:30px;
     display:flex;
     flex-shrink:0;
 }
@@ -565,8 +627,8 @@ $1000000+ INVESTED
 
 
 .lp3_group_dots{
-    height:15%;
-    width:100%;
+    height:50px;
+    width:350px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -575,7 +637,7 @@ $1000000+ INVESTED
 
 .lp3_dots{
     height:20%;
-    width:5%;
+    width:6.5%;
     border-radius:10vh;
     margin-left:5%;
     background: #D9D9D9;
@@ -607,7 +669,7 @@ STORIES
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 7vh;
+    font-size:45px;
     text-align: center;
     color: #40648F;
     width:100%;
@@ -655,8 +717,8 @@ STORIES
 
 
 .lp4_group_dots{
-    height:7%;
-    width:70%;
+    height:50px;
+    width:900px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -688,23 +750,33 @@ STORIES
     align-items:flex-end;
 }
 
+.lp4_customer_pp_container{
+    position:absolute;
+    width:95%;
+    height:42%;
+    height:145px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    top:0;
+}
+
 .lp4_customer_pp{
-    width:47%;
-    height:35%;
+    width:131px;
+    height:131px;
     border-radius:50%;
     background: rgba(108, 148, 147, 0.27);
     position:absolute;
-    top:7%;
-    left:24%;
     display:flex;
     justify-content:center;
     align-items:center;
     overflow:hidden;
+    margin-bottom:8px;
 }
 
 .lp4_customer_pp img{
-    width:95%;
-    height:95%;
+    width:94%;
+    height:94%;
     object-fit:fill;
     border-radius:50%;
 }
@@ -715,14 +787,14 @@ STORIES
     justify-content:flex-start;
     align-items:center;
     width:100%;
-    height:75%;
+    height:80%;
 }
 
 .lp4_white_div_content h2{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 4vh;
+    font-size:30px;
     color: #40648F;
 }
 
@@ -730,7 +802,7 @@ STORIES
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 3vh;
+    font-size:22px;
     color: #6A9CD7;
 }
 
@@ -741,7 +813,7 @@ STORIES
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 200;
-    font-size: 2.5vh;
+    font-size:15px;
     text-align: center;
     color: #0E1721;
 }
@@ -754,12 +826,14 @@ LANDING PAGE
 */
 
 .footer{
+    width:100%;
+    height:210px;
     height:35vh;
-    width:100vw;
     background: #203D3B;
     display:flex;
     align-items:center;
     justify-content:flex-start;
+    padding-bottom:12px;
 }
 
 .footer_left{
@@ -775,7 +849,7 @@ LANDING PAGE
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bolder;
-    font-size: 3vh;
+    font-size:15px;
     color:white;
 }
 
@@ -785,7 +859,7 @@ LANDING PAGE
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 2vh;
+    font-size:11px;
     margin-top:12%;
 }
 
@@ -831,7 +905,7 @@ LANDING PAGE
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bolder;
-    font-size: 10vh;
+    font-size:50px;
     color: #FFFFFF;
 }
 
@@ -839,8 +913,9 @@ LANDING PAGE
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 2vh;
+    font-size:11px;
     color: #FFFFFF;
+    margin-top:5px;
 }
 
 .footer_white_line{
@@ -853,4 +928,6 @@ LANDING PAGE
 .logo_pitchedin_footer{
     width:50%;
     height:20%;
+    width:300px;
+    height:50px;
 }

@@ -1,3 +1,12 @@
+/*Javascript
+untuk
+LandingPage View 1 */
+let future = document.querySelector('.future');
+setInterval(function(e){
+    future.innerHTML="Success?";
+},3000);
+
+
 /*Javascript 
 untuk 
 LandingPage View 3 */
@@ -73,8 +82,8 @@ for(let i=0;i<4;i++){
 /*
 Javascript 
 untuk
-Landing Page View 4
-*/
+Landing Page View 4*/
+
 let slider_lp4 = document.querySelector('.lp4_investor_stories_slider');
 let dots_lp4 = document.querySelectorAll('.lp4_dots');
 let interval_lp4;

@@ -1,5 +1,4 @@
 let dropDown_circle = document.getElementById('dropDown-circle');
-// let showDrop = document.getElementById('showDrop');
 let dropDown_img = document.getElementById('dropDown-img');
 let showDrop = document.querySelector('.dropDown-konten-group');
 
@@ -19,18 +18,49 @@ dropDown_circle.addEventListener('click',function(e){
     }
 });
 
-// box.addEventListener('click',function(e){
-//     if(count%2==0){
-//         box.style.transform = 'rotate(45deg)';
-//         showDrop.style.opacity='1';
+let pp = document.querySelector('.pp-circle');
+pp.addEventListener('click',function(e){
+    e.preventDefault();
+    if(window.innerWidth<=768){
+        if(showDrop.style.opacity==0){
+            showDrop.style.opacity=1;
+            showDrop.style.pointerEvents='auto';
+        }
+        else{
+            showDrop.style.opacity=0;
+            showDrop.style.pointerEvents='none';
+        }      
+    }
+});
 
-//         count = count+1;
-//     }
-//     else{
-//         showDrop.style.opacity='0';
+window.addEventListener('resize',function(e){
+    e.preventDefault();
+    if(window.innerWidth>768){
+        if(showDrop.style.opacity==0){
+            dropDown_img.style.transform = 'rotate(0deg)';
+            showDrop.style.pointerEvents='none';
+            dropDown_img.style.transition = '0.1s';
 
-//         box.style.transform = 'rotate(-45deg)';
-//         count = count+1;
-//     }
-// });
+        }
+        else{
+            dropDown_img.style.transform = 'rotate(180deg)';
+            showDrop.style.pointerEvents='auto';
+            dropDown_img.style.transition = '0.1s';
 
+        }          
+        responsive_content.style.opacity=0;
+        responsive_content.style.pointerEvents="none";
+    }
+});
+
+let menu_responsive = document.querySelector('.menu_responsive');
+let responsive_content = document.querySelector('.responsive_menu');
+let back = document.querySelector('.menu_back_symbol');
+menu_responsive.addEventListener('click',function(e){
+    responsive_content.style.pointerEvents="auto";
+    responsive_content.style.opacity=1;
+});
+back.addEventListener('click',function(e){
+    responsive_content.style.pointerEvents="none";
+    responsive_content.style.opacity=0;
+});
