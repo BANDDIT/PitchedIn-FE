@@ -6,31 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Julius+Sans+One&family=Montserrat:wght@200;300;400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Navbar/navbar.css">
     <link rel="stylesheet" href="LogIn.css">
+    <link rel="stylesheet" href="../Navbar/navbar.css">
 </head>
 <body>
-
     <header>
+        <div class="logo_group">
+            <img src="../Asset/menu_responsive.png" class="menu_responsive"/>
+            <a href="#">
+                <img src="../Asset/logo_pitchedin.png" id="logo"/>
+            </a>
+        </div>
         
-        <a href="#">
-            <img src="../Asset/logo_pitchedin.png" id="logo"/>
-        </a>
         <div id="nav-group">
             <a href="#" class="nav">Explore</a>
+            <!-- <a href="#" class="nav">Create</a> -->
             <a href="#" class="nav">Forum</a>
             <a href="#" class="nav">Tips</a>        
         </div>
+
+
         <div id="auth-group">
-            <a href="../SignUp/SignUp.html" class="auth">    
+            <a href="#" class="auth">    
                 <p>Sign Up</p>
             </a>
-            <a href="../LogIn/LogIn.html" class="auth">
+            <a href="#" class="auth">
                 <p>Log In</p>       
             </a>
         </div>
     </header>
 
+    <div class="responsive_menu">
+        <div class="responsive_menu_content">
+            <img src="../Asset/explore_back.png" class="menu_back_symbol"/>
+            <h3>Menu</h3>
+            <div class="explore_menu">
+                <img src="../Asset/lp2_compas.png" class="menu_logo"/>
+                <p class="menu_text">Explore</p>
+            </div>
+            <div class="create_menu">
+                <img src="../Asset/plus_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Create</p>
+            </div>
+            <div class="forum_menu">
+                <img src="../Asset/chat_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Forum</p>
+            </div>
+
+            <div class="tips_menu">
+                <img src="../Asset/idea_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Tips</p>
+            </div>
+
+            <div class="signUp_menu">
+                <img src="../Asset/signUp.png" class="menu_logo"/>
+                <p class="menu_text">Sign Up</p>
+            </div>
+
+            <div class="logIn_menu">
+                <img src="../Asset/logIn.png" class="menu_logo"/>
+                <p class="menu_text">Log In</p>
+            </div>
+        </div>
+    </div>
+
+    <img src="../Asset/login-pict.png" class="login-banner"/>
 
     <div class="content-box">
         <form class="login-box">
@@ -80,8 +120,8 @@
                     <h2 class="modal-first-h2">Oops, Did You Forget</h2>
                     <h2 class="modal-second-h2">Your Password?</h2>
                     <div class="model-box-up-konten-info-group">
-                        <p class="model-box-up-konten-info">Tell us your email, and we will send you a link</p>
-                        <p class="model-box-up-konten-info">to reset your password!</p>
+                        <p class="model-box-up-konten-info">Tell us your email, and we will send you a link to reset your password!</p>
+                        
                     </div>
                 </div>
                 <div class="modal-box-up-close" id="close-modal">
@@ -110,5 +150,6 @@
    
 
     <script src="LogIn.js"></script>
+    <script src="../Navbar/navbarLogOut.js"></script>
 </body>
 </html>

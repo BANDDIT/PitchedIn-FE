@@ -71,7 +71,10 @@ CSS
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
+    position:absolute;
+    z-index:10;
+    left:0;
+    top:100%;
 }
 
 .login-box{
@@ -80,18 +83,22 @@ CSS
     align-items:center;
 
     background: rgba(68, 114, 112, 0.08);
+    background:#F0F4F4;
     /* background:black; */
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
     width:940px;
     height:450px;
-    margin-top:20px;
-    
+    margin-top:20px;  
     border-radius:50px;
     margin-bottom:10px;
-
-
 }
 
+.login-banner{
+    z-index:1;
+    width:100%;
+    height:340px;
+    display:none;
+}
 
 /* .login-pic{
 
@@ -411,6 +418,8 @@ CSS
     font-weight: 600;
     justify-content:space-around;
     color: #6C9493;
+
+
 }
 
 .sign-up-btn{
@@ -436,6 +445,7 @@ CSS
     display:flex;
     justify-content:center;
     align-items:center;
+    z-index:10;
 }
 
 #modal_errorMessage{
@@ -587,3 +597,283 @@ CSS
     color:#6C9493;
 }
 
+
+@media (max-width:768px){
+    .login-pic-img{
+        display:none;
+    }
+
+    .login-box{
+        width:75%;
+    }
+
+    .add-info{
+        width:75%;
+    }
+
+    .login-banner{
+        display:flex;
+    }
+
+    .content-box{
+        top:17%;
+        left:0%;
+    }
+
+    .login-auth hr{
+        width:200%;
+    }
+
+    .login-auth-username-box{
+        width:170% !important;
+    }
+    .login-auth-username-box input{
+        width:80% !important;
+    }
+
+    .login-auth-password-box{
+        width:170% !important;
+    }
+    .login-auth-password-box input{
+        width:80% !important;
+    }
+
+    .login-auth-username-box{
+        width:200%;
+    }
+    .login-auth-username-box input{
+        width:75%;
+    }
+
+    .login-btn{
+        width:50%;
+    }
+
+    .ContinueWithGoogle-btn{
+        width:100%;
+    }
+
+    .ContinueWithGoogle-btn p{
+        font-size:15px;
+    }
+
+    .ContinueWithFacebook-btn{
+        width:100%;
+    }
+
+    .ContinueWithFacebook-btn p{
+        font-size:15px;
+    }
+
+    .errorMessage{
+        width:170%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .login-auth-h1 h1{
+        font-size:70px;
+    }
+
+    .modal-box{
+        width:400px;
+        height:310px;
+    }
+}
+
+
+@media(max-width:600px){
+    .login-pic-img{
+        display:none;
+    }
+
+    .login-box{
+        width:75%;
+    }
+
+    .add-info{
+        width:75%;
+    }
+
+    .login-banner{
+        display:flex;
+    }
+
+    .content-box{
+        top:17%;
+        left:0%;
+    }
+
+    .login-auth hr{
+        width:200%;
+    }
+
+    .login-auth-username-box{
+        width:200% !important;
+        height:70px;
+        margin-top:10px;
+    }
+    .login-auth-username-box input{
+        width:75% !important;
+    }
+
+    .login-auth-password-box{
+        width:200% !important;
+        height:70px;
+        margin-top:10px;
+
+    }
+    .login-auth-password-box input{
+        width:75%!important;
+    }
+
+    .login-auth-username-box{
+        width:200%;
+    }
+    .login-auth-username-box input{
+        width:75%;
+    }
+
+    .login-btn{
+        width:70%;
+    }
+
+    .ContinueWithGoogle-btn{
+        width:145%;
+    }
+
+    .ContinueWithGoogle-btn p{
+        font-size:15px;
+    }
+
+    .ContinueWithFacebook-btn{
+        width:145%;
+    }
+
+    .ContinueWithFacebook-btn p{
+        font-size:15px;
+    }
+
+    .errorMessage{
+        width:170%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .login-auth-h1 h1{
+        font-size:55px;
+    }
+}
+
+@media(max-width:400px){
+    .login-auth-h1{
+        height:10%;
+    }
+    .login-auth-h1 h1{
+        font-size:30px;
+    }
+    .login-box{
+        width:90%;
+    }
+    #forgotPassword{
+        width:200%;
+        display:flex;
+        justify-content:center;
+        font-size:14px;
+    }
+    .login-auth-username-box{
+        height:60px;
+    }
+    .login-auth-username-box input{
+        font-size:15px;
+    }
+    .login-auth-username-box input::placeholder{
+        font-size:15px;
+    }
+
+    .login-auth-password-box{
+        height:60px;
+    }
+    .login-auth-password-box input{
+        font-size:15px;
+    }
+    .login-auth-password-box input::placeholder{
+        font-size:15px;
+    }
+
+    .login-btn{
+        width:85%;
+        height:35px;
+    }
+    .login-btn p{
+        font-size:14px;
+    }
+
+    .ContinueWithGoogle-btn{
+        width:150%;
+        height:40px;
+    }
+    .ContinueWithGoogle-btn p{
+        font-size:14px;
+    }
+
+    .ContinueWithFacebook-btn{
+        width:150%;
+        height:40px;
+    }
+    .ContinueWithFacebook-btn p{
+        font-size:14px;
+    }
+
+    .add-info{
+        width:90%;
+    }
+    .add-info p{
+        font-size:13px;
+    }
+
+    .modal-box{
+        width:300px;
+        height:250px;
+    }
+
+    .modal-box-up-close img{
+        height:35px;
+        width:35px;
+        margin-top:3px;
+        margin-right:3px;
+    }
+
+    .modal-box-up-konten h2{
+        font-size:20px;
+        line-height:25px;
+    }
+
+    .model-box-up-konten-info-group p{
+        font-size:12px;
+    }
+
+    .enter-email-box{
+        height:45px;
+    }
+
+    .enter-email-box input{
+        font-size:15px;
+    }
+
+    .enter-email-box input::placeholder{
+        font-size:15px;
+    }
+    .enter-email-box img{
+        width:35px;
+        height:35px;
+    }
+
+    #modal_errorMessage{
+        font-size:15px;
+    }
+
+    .resend-link p{
+        font-size:15px;
+    }
+}

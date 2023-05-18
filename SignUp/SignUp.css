@@ -71,7 +71,10 @@ CSS
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
+    position:absolute;
+    z-index:10;
+    left:0;
+    top:100%;
 }
 
 .login-box{
@@ -80,6 +83,8 @@ CSS
     align-items:center;
 
     background: rgba(68, 114, 112, 0.08);
+    background:#F0F4F4;
+
     /* background:black; */
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
     width:940px;
@@ -90,6 +95,13 @@ CSS
     margin-bottom:10px;
 
 
+}
+
+.login-banner{
+    z-index:1;
+    width:100%;
+    height:340px;
+    display:none;
 }
 
 
@@ -463,7 +475,11 @@ CSS
 .detail-signup-form{
     width:100%;
     height:90%;
+    width:fit-content;
+    height:fit-content;
+    background:black;
     display:none;
+
     pointer-events:none;
     /* justify-content:space-around; */
 }
@@ -474,12 +490,25 @@ CSS
     /* pointer-events:none; */
     /* display:flex; */
     height:88%;
+    width:fit-content;
+    height:fit-content;
     top:10%;
     bottom:1%;
     left:5%;
     right:5%; 
     position:absolute;
     z-index:2;
+}
+
+.detail-signup-header{
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.hr-header-responsive{
+    display:none;
 }
 
 .container-detail-signup{
@@ -494,7 +523,7 @@ CSS
     justify-content:center;
     align-items:center;
     margin-top:2.2%;
-
+    margin-top:10%;
 }
 
 
@@ -503,10 +532,10 @@ CSS
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 20px;
-    margin-left:10%;
+
     margin-top:5%;
     margin-bottom:5%;
-    width:80%;
+    width:100%;
     display:flex;
     justify-content:center;
 }
@@ -516,7 +545,7 @@ CSS
     flex-direction:column;
     width:50%;
     height:90%;
-    margin-top:5%;
+    margin-top:7%;
     margin-left:3%;
 }
 
@@ -566,7 +595,6 @@ CSS
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
 }
 
 .btn-container{
@@ -740,4 +768,360 @@ CSS
 
 .investor-role:hover{
     cursor:pointer;
+}
+
+@media (max-width:768px){
+    .login-pic-img{
+        display:none;
+    }
+
+    .login-box{
+        width:75%;
+    }
+
+    .add-info{
+        width:75%;
+    }
+
+    .login-banner{
+        display:flex;
+    }
+
+    .content-box{
+        top:17%;
+        left:0%;
+    }
+
+    .login-auth hr{
+        width:200%;
+    }
+    .login-auth-email-box{
+        width:170% !important;
+    }
+    .login-auth-email-box input{
+        width:80% !important;
+    }
+
+    .login-auth-username-box{
+        width:170% !important;
+    }
+    .login-auth-username-box input{
+        width:80% !important;
+    }
+
+    .login-auth-password-box{
+        width:170% !important;
+    }
+    .login-auth-password-box input{
+        width:80% !important;
+    }
+
+    .login-auth-username-box{
+        width:200%;
+    }
+    .login-auth-username-box input{
+        width:75%;
+    }
+
+    .login-btn{
+        width:50%;
+    }
+
+    .errorMessage{
+        width:170%;
+        display:flex;
+        justify-content:center;
+    }
+    .login-auth-h1{
+        width:200%;
+    }
+
+    .login-auth-h1 h1{
+        font-size:50px;
+    }
+
+    .checkBox{
+        width:200%;
+    }
+
+
+    /*PAGE 2 dari Sign Up*/
+    .eclipse-signup{
+        display:none;
+    }
+    .detail-signup-form{
+        width:100%;
+        justify-content:center;
+        align-items:center;
+    }
+    .detail-signup{
+        background:#F0F4F4;
+        border-radius:30px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:75%;
+        height:fit-content;
+        top:22%;
+        left:12.5%;
+        /*
+        width:90%;
+        height:100%;*/
+    }
+    .detail-signup-opening{
+        order:2;
+    }
+    .container-detail-signup{
+        order:1;
+    }
+    .detail-judul1, .detail-judul2, .detail-signup-note, .detail-signup-hr{
+        display:none;
+    }
+    .detail-signup-data{
+        margin-top:-12%;
+    }
+    .detail-signup-data input{
+        border:none;
+        outline:none;
+        background:white;
+        width:180%;
+        height:35px;
+        border-radius:30px;
+        font-size:15px;
+        
+    }
+    #errorMessage2{
+        width:200%;
+        font-size:15px;
+    }
+    .detail-signup-header{
+        display:flex;
+        width:fit-content;
+        height:fit-content;
+        height:60px;
+    }
+    .hr-header-responsive{
+        display:flex;
+        width:90%;
+    }
+    .one{
+        color:black;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 48px;
+    }
+    .more_step{
+        color:#6C9493;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 48px;
+    }
+    .btn-detail-signup{
+        width:40%;
+        height:30px;
+        font-size:14px;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        margin-bottom:15px;
+    }
+    
+    .role-signup{
+        width:180%;
+    }
+
+    .role-sign-up-group p{
+        font-size:15px;
+    }
+
+    .pitcher-role, .investor-role{
+       width:180%;
+       font-size:15px;
+    }
+    .btn-container{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .detail-signup-opening{
+        margin-left:0%;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}
+
+
+@media(max-width:600px){
+    .login-pic-img{
+        display:none;
+    }
+
+    .login-box{
+        width:75%;
+    }
+
+    .add-info{
+        width:75%;
+    }
+
+    .login-banner{
+        display:flex;
+    }
+
+    .content-box{
+        top:17%;
+        left:0%;
+    }
+
+    .login-auth hr{
+        width:200%;
+    }
+    .login-auth-email-box{
+        width:200% !important;
+        height:70px;
+        margin-top:10px;
+    }
+    .login-auth-email-box input{
+        width:75% !important;
+    }
+
+    .login-auth-username-box{
+        width:200% !important;
+        height:70px;
+        margin-top:10px;
+    }
+    .login-auth-username-box input{
+        width:75% !important;
+    }
+
+    .login-auth-password-box{
+        width:200% !important;
+        height:70px;
+        margin-top:10px;
+
+    }
+    .login-auth-password-box input{
+        width:75%!important;
+    }
+
+    .login-auth-username-box{
+        width:200%;
+    }
+    .login-auth-username-box input{
+        width:75%;
+    }
+
+    .login-btn{
+        width:70%;
+    }
+
+    .errorMessage{
+        width:170%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .login-auth-h1 h1{
+        font-size:40px;
+    }
+
+}
+
+@media(max-width:526px){
+    .one, .more_step{
+        font-size:40px;
+    }
+}
+
+@media(max-width:425px){
+    .one, .more_step{
+        font-size:30px;
+    }   
+}
+
+@media(max-width:400px){
+    .login-auth-h1{
+        height:10%;
+    }
+    .login-auth-h1 h1{
+        font-size:30px;
+    }
+    .login-box{
+        width:90%;
+    }
+
+    .login-auth-email-box{
+        height:60px;
+    }
+    .login-auth-email-box input{
+        font-size:15px;
+    }
+    .login-auth-email-box input::placeholder{
+        font-size:15px;
+    }
+
+
+    .login-auth-username-box{
+        height:60px;
+    }
+    .login-auth-username-box input{
+        font-size:15px;
+    }
+    .login-auth-username-box input::placeholder{
+        font-size:15px;
+    }
+
+    .login-auth-password-box{
+        height:60px;
+    }
+    .login-auth-password-box input{
+        font-size:15px;
+    }
+    .login-auth-password-box input::placeholder{
+        font-size:15px;
+    }
+
+    .login-btn{
+        width:85%;
+        height:35px;
+    }
+    .login-btn p{
+        font-size:14px;
+    }
+
+
+    .add-info{
+        width:90%;
+    }
+    .add-info p{
+        font-size:13px;
+    }
+
+    .modal-box{
+        width:300px;
+        height:250px;
+    }
+
+    .enter-email-box{
+        height:45px;
+    }
+
+    .enter-email-box input{
+        font-size:15px;
+    }
+
+    .enter-email-box input::placeholder{
+        font-size:15px;
+    }
+    .enter-email-box img{
+        width:35px;
+        height:35px;
+    }
 }

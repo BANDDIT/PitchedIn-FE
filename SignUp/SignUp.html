@@ -11,25 +11,67 @@
 </head>
 <body>
     <header>
-        <a href="#">
-            <img src="../Asset/logo_pitchedin.png" id="logo"/>
-        </a>
+        <div class="logo_group">
+            <img src="../Asset/menu_responsive.png" class="menu_responsive"/>
+            <a href="#">
+                <img src="../Asset/logo_pitchedin.png" id="logo"/>
+            </a>
+        </div>
         
         <div id="nav-group">
             <a href="#" class="nav">Explore</a>
+            <!-- <a href="#" class="nav">Create</a> -->
             <a href="#" class="nav">Forum</a>
             <a href="#" class="nav">Tips</a>        
         </div>
 
+
         <div id="auth-group">
-            <a href="../SignUp/SignUp.html" class="auth">    
+            <a href="#" class="auth">    
                 <p>Sign Up</p>
             </a>
-            <a href="../LogIn/LogIn.html" class="auth">
+            <a href="#" class="auth">
                 <p>Log In</p>       
             </a>
         </div>
     </header>
+
+    <div class="responsive_menu">
+        <div class="responsive_menu_content">
+            <img src="../Asset/explore_back.png" class="menu_back_symbol"/>
+            <h3>Menu</h3>
+            <div class="explore_menu">
+                <img src="../Asset/lp2_compas.png" class="menu_logo"/>
+                <p class="menu_text">Explore</p>
+            </div>
+            <div class="create_menu">
+                <img src="../Asset/plus_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Create</p>
+            </div>
+            <div class="forum_menu">
+                <img src="../Asset/chat_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Forum</p>
+            </div>
+
+            <div class="tips_menu">
+                <img src="../Asset/idea_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Tips</p>
+            </div>
+
+            <div class="signUp_menu">
+                <img src="../Asset/signUp.png" class="menu_logo"/>
+                <p class="menu_text">Sign Up</p>
+            </div>
+
+            <div class="logIn_menu">
+                <img src="../Asset/logIn.png" class="menu_logo"/>
+                <p class="menu_text">Log In</p>
+            </div>
+        </div>
+    </div>
+
+    <img src='../Asset/newSignUp_pict.png' class="login-banner"/>
+
 
     <div class="content-box">
         <form class="login-box">
@@ -38,7 +80,7 @@
             <div class="login-auth">
 
                 <div class="login-auth-h1">
-                    <h1>Hi, New User!</h3>
+                    <h1>Hi, New User!</h1>
                 </div>
                 
                 <hr>
@@ -85,6 +127,12 @@
     
     <form class="detail-signup-form">
         <div class="detail-signup">
+
+            <div class="detail-signup-header">
+                <h1 class="one">ONE&nbsp;</h1>
+                <h1 class="more_step">more step!</h1>
+            </div>
+            <hr class="hr-header-responsive"/>
             <div class="detail-signup-opening">
                 <h1 class="detail-judul1">You are only</h1>
                 <h1 class="detail-judul2">ONE step closer!</h1>
@@ -126,14 +174,10 @@
                 </div>
             </div>
         </div>
-
         <img src="../Asset/eclipse-signup.png" class="eclipse-signup"/>
-
-
     </form>
-   
-   
 
     <script src="SignUp.js"></script>
+    <script src="../Navbar/navbarLogOut.js"></script>
 </body>
 </html>

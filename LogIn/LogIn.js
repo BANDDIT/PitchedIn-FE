@@ -62,6 +62,9 @@ let errorMessage_modal = document.getElementById('modal_errorMessage');
 function resets(){
     errorMessage_modal.style.display="none";
     errorMessage_modal.style.pointerEvents="none";
+    resend.style.color="black";
+    resend.style.textDecoration="none";
+    resend.style.cursor="auto";
     resendBox.style.display="none";
     resendBox.style.pointerEvents="none";
 }
@@ -94,14 +97,14 @@ close.addEventListener('click',function(e){
     enter_email_box.reset();
     modal.style.pointerEvents="none";
     errorMessage_modal.style.display="none";
-    errorMessage_modal.style.pointerEvents="none";
+    errorMessage_modal.style.cursor="none";
     resendBox.style.display="none";
     resendBox.style.pointerEvents="none";
 });
 
 let intervalTimer;
 function Timer(){
-    let second=30;
+    let second=10;
     modal_timer.innerText='in '+second.toString()+'s';
 
     intervalTimer = setInterval(function(e){
