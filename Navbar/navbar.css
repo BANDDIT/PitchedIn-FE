@@ -178,7 +178,9 @@ Ini dijalankan kalau sudah Login
     box-sizing:border-box;
     position:absolute;
     margin-top:225px;
-    margin-left:35px;
+    /*
+    margin-left:35px;*/
+    right:20px;
     color:#ffff;
     background-color: #112221;
     font-family: 'Montserrat';
