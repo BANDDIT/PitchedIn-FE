@@ -41,8 +41,9 @@ header{
 }
 
 .investor_profile{
+    /*
     width:71%;
-    height:100%;
+    height:100%;*/
     width:880px;
     height:455px;
     background-color: white;
@@ -107,6 +108,9 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
+
+    height:150px;
+    width:150px;
 }
 
 .pp_white_circle{
@@ -380,6 +384,34 @@ header{
 }
 
 .edit-btn img{
+    height:3vh;
+    width:3vh;
+    background:white;
+    width:1.3rem;
+    height:1.3rem;
+}
+
+.edit-btn-investor{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background:white;
+}
+
+.edit-btn-investor h3{
+    color:#203D3B;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size:16px;
+    margin-left:0.5rem;
+    margin-right:5px;
+}
+
+.edit-btn-investor img{
     height:3vh;
     width:3vh;
     background:white;
@@ -1573,6 +1605,9 @@ First Page
 }
 .my_post_content_right img{
     cursor:pointer;
+    width:20px;
+    height:35px;
+    margin-left:5px;
 }
 .my_post_blank{
     width:300px;
@@ -1822,6 +1857,9 @@ MESSAGE
     pointer-events:auto;
     box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.25);
     z-index:5;
+
+
+    display:none;
 }
 
 .message_up{
@@ -2137,4 +2175,156 @@ MESSAGE
     width:12px;
     background:#3EC786;
     border-radius:100%;
+}
+
+
+@media(max-width:1100px){
+    .investor_profile,.my_post_content,.my_experience_content{
+        width:750px;
+    }
+    .my_post_blank, .my_experience_blank{
+        width:430px;
+    }
+    .user_reccomendations{
+        width:290px;
+    }
+}
+
+@media(max-width:700px){
+    .page-content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+    }
+    .explore_page2_right{
+        display:none;
+    }
+    .investor_profile,.my_post_content, .my_experience_content{
+        width:600px;
+        margin-right:0px;
+    }
+    .my_post_blank,.my_experience_blank{
+        display:none;
+    }
+    .my_post,.my_experience{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .connections{
+        width:85%;
+    }
+}
+/*
+@media(max-width:650px){
+    .investor_profile,.my_post_content, .my_experience_content{
+        width:550px;
+        margin-right:0px;
+    }   
+}*/
+
+@media(max-width:620px){
+    .investor_profile,.my_post_content, .my_experience_content{
+        width:500px;
+        margin-right:0px;
+    }   
+}
+/*
+@media(max-width:550px){
+    .investor_profile,.my_post_content, .my_experience_content{
+        width:450px;
+        margin-right:0px;
+    }   
+}*/
+
+@media(max-width:520px){
+    .investor_profile,.my_post_content, .my_experience_content{
+        width:400px;
+        margin-right:0px;
+    }   
+    .connections{
+        width:97%;
+    }
+}
+
+@media(max-width:420px){
+    .investor_profile,.my_post_content, .my_experience_content{
+        width:300px;
+        margin-right:0px;
+    }   
+
+    .investor_profile{
+        height:fit-content;
+    }
+
+    .investor_profile_content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .profile_investor{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        height:fit-content;
+    }
+
+    .biodata_investor{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top:15px;
+    }
+
+    .tag-investor{
+        height:35px;
+    }
+
+    .data_investor{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        margin-top:10px;
+    }
+
+    .data_investor_address,.data_investor_email,.data_investor_nama{
+        display:flex;
+        justify-content:center;
+    }
+
+    .quote_investor{
+        margin-top:10px;
+        width:160%;
+        height:fit-content;
+        margin-left:0px;
+        margin-right:0px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .connections-frame{
+        margin-top:20px;
+        width:115%;
+        margin-left:20px;
+        margin-right:0px;
+    }
+
+    .connections{
+        width:100%;
+    }
+
+    .about-me{
+        margin-top:10px;
+    }
+
+    .about-me_content p{
+        text-align:justify;
+    }
+ 
 }

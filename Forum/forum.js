@@ -29,8 +29,39 @@ input_forum.addEventListener('input',function(e){
     }
 });
 
+let forum_page = document.querySelector('.forum_page');
+forum_page.style.height=(window.innerHeight-70)+'px';
 
 
+
+let circle_add = document.querySelector('.circle_add');
+let responsive_modal = document.querySelector('.forum_page_left_down');
+let close_responsive_modal = document.querySelector('.close_forum_page_left');
+let scroll_area = document.querySelector('.forum_page_right');
+circle_add.addEventListener('click',function(e){
+    responsive_modal.style.pointerEvents="auto";
+    responsive_modal.style.opacity=1;
+    //scroll_area.style.overflow="hidden";
+});
+close_responsive_modal.addEventListener('click',function(e){
+    responsive_modal.style.pointerEvents="none";
+    responsive_modal.style.opacity=0;
+    //scroll_area.style.overflow="visible";
+
+});
+
+
+window.addEventListener('resize',function(e){
+    e.preventDefault();
+    if(window.innerWidth>700){
+        responsive_modal.style.pointerEvents="auto";
+        responsive_modal.style.opacity=1;
+    }
+    else{
+        responsive_modal.style.pointerEvents="none";
+        responsive_modal.style.opacity=0;  
+    }
+})
 /*
 let picture = document.getElementById('picture');
 let video = document.getElementById('video');

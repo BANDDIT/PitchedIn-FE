@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Julius+Sans+One&family=Montserrat:wght@200;300;400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../Navbar/navbar.css"/>
     <link rel="stylesheet" href="forum.css"/>
 
 </head>
 <body>
     <header>
-        <a href="#">
-            <img src="../Asset/logo_pitchedin.png" id="logo"/>
-        </a>
+        <div class="logo_group">
+            <img src="../Asset/menu_responsive.png" class="menu_responsive"/>
+            <a href="#">
+                <img src="../Asset/logo_pitchedin.png" id="logo"/>
+            </a>
+        </div>
+
         
         <div id="nav-group">
             <a href="#" class="nav">Explore</a>
@@ -48,6 +53,40 @@
         </div>
     </header>
 
+    <div class="responsive_menu">
+        <div class="responsive_menu_content">
+            <img src="../Asset/explore_back.png" class="menu_back_symbol"/>
+            <h3>Menu</h3>
+            <div class="explore_menu">
+                <img src="../Asset/lp2_compas.png" class="menu_logo"/>
+                <p class="menu_text">Explore</p>
+            </div>
+            <div class="create_menu">
+                <img src="../Asset/plus_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Create</p>
+            </div>
+            <div class="forum_menu">
+                <img src="../Asset/chat_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Forum</p>
+            </div>
+
+            <div class="tips_menu">
+                <img src="../Asset/idea_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Tips</p>
+            </div>
+
+            <div class="signUp_menu">
+                <img src="../Asset/signUp.png" class="menu_logo"/>
+                <p class="menu_text">Sign Up</p>
+            </div>
+
+            <div class="logIn_menu">
+                <img src="../Asset/logIn.png" class="menu_logo"/>
+                <p class="menu_text">Log In</p>
+            </div>
+        </div>
+    </div>
+
     
     <div class="forum_page">
         <div class="forum_page_left">
@@ -59,7 +98,7 @@
                 </div>
     
                 <form class="forum_page_left_down">
-                    <h3>Got a problem in mind?</h3>
+                    <h3 class="forum_left_down_judul">Got a problem in mind?</h3>
                     <div class="create_forum">
                         <div class="create_forum_profile">
                             <div class="create_forum_pp">
@@ -74,19 +113,25 @@
                         </div>
                         <hr>
                         
-                        <textarea class="input_forum" placeholder="What problem are you saying?" id="input_forum"></textarea>
+                        <textarea class="input_forum" placeholder="What problem are you facing?" id="input_forum"></textarea>
 
                 
                         <hr>
                         <div class="create_forum_bottom">
                             <p class="numberOfChar">0/200</p>
                         </div>
+
+
+                        <div class="close_forum_page_left">
+                            &#10006;
+                        </div>
                     </div>
 
 
-                    <button type="submit">
+                    <button class="submit_forum" type="submit">
                         Create Post
                     </button>
+
                 </form>
             </div>
         </div>
@@ -194,7 +239,33 @@
                     <img src="../Asset/save-logo.png" class="save"/>
                 </div>
             </div>
+
+            <div class="postingan_user">
+                <div class="postingan_content">
+                    <div class="profile_postingan_content">
+                        <img src="../Asset/anonymous.png"/>
+                        <h3>Anonymous</h3>
+                    </div>
+                    <hr>
+                    <p>I always seem to forget to bring my lanyard to work. Isn’t  it frustrating that you have to go back home again?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem veniam et. Error repellendus veritatis amet odio doloribus quibusdam ea, tempora magni ullam maxime facere tenetur vel natus fuga? Iste ipsam odit vero aut repellat placeat similique voluptatibus consequuntur aspernatur atque commodi sunt amet tenetur deserunt, ipsum molestiae eius repudiandae optio enim quae impedit, earum corporis. Minima deserunt quia assumenda sunt molestias ratione, sed sit fugit explicabo, quisquam illum. Quae ipsum iure libero at reiciendis, exercitationem, dolore voluptas nesciunt voluptate nemo, illo ea excepturi. Fugit natus ea facere quam commodi beatae possimus, libero et accusamus ipsum enim laborum adipisci tenetur accusantium unde quia perspiciatis blanditiis? Voluptatibus explicabo, deserunt dolorum fugiat iste corporis expedita nostrum tempore iusto quo laboriosam optio at veniam alias esse suscipit ipsam molestias? Quisquam ut doloremque harum ipsa? Placeat, molestias officia sint in pariatur unde veniam quas a praesentium nam, mollitia qui consectetur sunt magni repudiandae ipsam? Quo nam omnis excepturi repudiandae illum sunt dolores fuga dolorem est, natus velit maiores aliquid. Ipsum aspernatur sit molestiae eos consectetur voluptatibus iusto optio hic nulla itaque exercitationem quae repellendus veritatis facere, quaerat odio odit nemo, voluptas, dolor cupiditate. Minima earum consequatur commodi voluptatem optio recusandae suscipit molestias quod id!</p>
+                </div>
+                <div class="like_dkk">
+                    <img src="../Asset/heart-noLike.png" class="heart"/>
+                    <img src="../Asset/comment-logo.png" class="comment"/>
+                    <img src="../Asset/save-logo.png" class="save"/>
+                </div>
+            </div>
+            <div class="postingan_user_space">
+                <div class="bottom_space"></div>
+            </div>
         </div>
+    </div>
+
+
+    <div class="circle_add">
+        <div class="horizontal"></div>
+        <div class="vertical"></div>
     </div>
     <!--
     <div class="container">
