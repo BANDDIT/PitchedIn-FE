@@ -44,6 +44,13 @@ for (let i = 0; i < sub_frame.length; i++) {
     });
 }
 
+let tips_preview_content_container = document.querySelector('.tips-preview-content-container');
+window.addEventListener('resize',function(e){
+    e.preventDefault();
+    if(window.innerWidth<=700){
+        tips_preview_content_container.style.height=(window.innerHeight-141)+'px';
+    }
+});
 
 
 /*

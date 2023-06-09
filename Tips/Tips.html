@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create</title>
+    <title>Tips</title>
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Julius+Sans+One&family=Montserrat:wght@200;300;400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Navbar/navbar.css">
     <link rel="stylesheet" href="Tips.css">
@@ -12,9 +12,13 @@
 </head>
 <body>
     <header>
-        <a href="#">
-            <img src="../Asset/logo_pitchedin.png" id="logo"/>
-        </a>
+        <div class="logo_group">
+            <img src="../Asset/menu_responsive.png" class="menu_responsive"/>
+            <a href="#">
+                <img src="../Asset/logo_pitchedin.png" id="logo"/>
+            </a>
+        </div>
+
         
         <div id="nav-group">
             <a href="#" class="nav">Explore</a>
@@ -22,6 +26,7 @@
             <a href="#" class="nav">Forum</a>
             <a href="#" class="nav">Tips</a>        
         </div>
+
 
         <div id="pp_welcome_dropdown">
             <a href="#" class="pp-circle">    
@@ -46,6 +51,40 @@
             </div>
         </div>
     </header>
+
+    <div class="responsive_menu">
+        <div class="responsive_menu_content">
+            <img src="../Asset/explore_back.png" class="menu_back_symbol"/>
+            <h3>Menu</h3>
+            <div class="explore_menu">
+                <img src="../Asset/lp2_compas.png" class="menu_logo"/>
+                <p class="menu_text">Explore</p>
+            </div>
+            <div class="create_menu">
+                <img src="../Asset/plus_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Create</p>
+            </div>
+            <div class="forum_menu">
+                <img src="../Asset/chat_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Forum</p>
+            </div>
+
+            <div class="tips_menu">
+                <img src="../Asset/idea_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Tips</p>
+            </div>
+
+            <div class="signUp_menu">
+                <img src="../Asset/signUp.png" class="menu_logo"/>
+                <p class="menu_text">Sign Up</p>
+            </div>
+
+            <div class="logIn_menu">
+                <img src="../Asset/logIn.png" class="menu_logo"/>
+                <p class="menu_text">Log In</p>
+            </div>
+        </div>
+    </div>
 
     <div class="page_tips">
         <div class="page_tips_left">
@@ -104,6 +143,9 @@
                     <input type="text" placeholder="Search here" class="input_search"/>
                 </div>
             </form>
+
+            <div class="tips-preview-content-container">
+
             <div class="tips-preview-content">
                 <div class="tips-preview-content-header">
                     <div class="tips-preview-content-header-profile">
@@ -115,7 +157,6 @@
                         </div>
                         <div class="tips-preview-content-header-profile-name">
                             <h3>Steven Nathaniel</h3>
-                            <br/>
                             <p>Posted..ago</p>
                         </div>
                     </div>
@@ -159,7 +200,7 @@
 
                 <div class="tips-preview-logo">
                     <img src="../Asset/heart-noLike.png" class="heart-btn"/>
-                    <img src="../Asset/comment-logo.png"/>
+                    <img src="../Asset/comment-logo.png" class="comment-btn"/>
                     <img src="../Asset/save-logo.png" class="saved-logo"/>
                 </div>
 
@@ -187,7 +228,6 @@
                         </div>
                         <div class="tips-preview-content-header-profile-name">
                             <h3>Steven Nathaniel</h3>
-                            <br/>
                             <p>Posted..ago</p>
                         </div>
                     </div>
@@ -229,7 +269,7 @@
 
                 <div class="tips-preview-logo">
                     <img src="../Asset/heart-noLike.png" class="heart-btn"/>
-                    <img src="../Asset/comment-logo.png"/>
+                    <img src="../Asset/comment-logo.png" class="comment-btn"/>
                     <img src="../Asset/save-logo.png" class="saved-logo"/>
                 </div>
 
@@ -257,7 +297,6 @@
                         </div>
                         <div class="tips-preview-content-header-profile-name">
                             <h3>Steven Nathaniel</h3>
-                            <br/>
                             <p>Posted..ago</p>
                         </div>
                     </div>
@@ -301,7 +340,7 @@
 
                 <div class="tips-preview-logo">
                     <img src="../Asset/heart-noLike.png" class="heart-btn"/>
-                    <img src="../Asset/comment-logo.png"/>
+                    <img src="../Asset/comment-logo.png" class="comment-btn"/>
                     <img src="../Asset/save-logo.png" class="saved-logo"/>
                 </div>
 
@@ -329,7 +368,6 @@
                         </div>
                         <div class="tips-preview-content-header-profile-name">
                             <h3>Steven Nathaniel</h3>
-                            <br/>
                             <p>Posted..ago</p>
                         </div>
                     </div>
@@ -371,7 +409,7 @@
 
                 <div class="tips-preview-logo">
                     <img src="../Asset/heart-noLike.png" class="heart-btn"/>
-                    <img src="../Asset/comment-logo.png"/>
+                    <img src="../Asset/comment-logo.png" class="comment-btn"/>
                     <img src="../Asset/save-logo.png" class="saved-logo"/>
                 </div>
 
@@ -382,12 +420,15 @@
                     <div class="preview-content-bottom-caption">
                         <p class="main-content">Halo halo, adik-adiku yang terkedik kedik ingin belajar bikin konten yang menarik seperti aku? Caranya gampang banget, kalian tinggal subscribe aja channel youtube</p>   
                         <p class="read_more">...read more</p>
+
                     </div>
 
                     
                     <p class="tags"></p>
                 </div>
-            </div>              
+            </div>      
+            
+            </div>
         </div>
 
 
