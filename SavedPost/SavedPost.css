@@ -185,11 +185,12 @@ SAVED POST
     font-size: 12px;
     line-height: 21px;
     color: #F1F1F1;
-    height:22px;
-    width:85px;
+    height:25px;
+    width:90px;
     border-radius:20px;
+    text-decoration:none;
 }
-
+/*
 .bottom_explore_left{
     display:flex;
     flex-direction:column;
@@ -217,7 +218,74 @@ SAVED POST
     overflow-wrap:break-word;
     margin-left:25px;
 }
+*/
 
+
+.bottom_explore_left{
+    display:flex;
+    flex-direction:column;
+    width: 280px;
+    height:fit-content;
+    height:100px;
+    overflow-wrap:break-word;
+    margin-top:0.3rem;
+}
+
+.bottom_explore_left_alt{
+    display:none;
+    flex-direction:column;
+    width: 250px;
+    height:fit-content;
+    height:100px;
+    overflow-wrap:break-word;
+    margin-top:0.3rem;
+}
+
+.bottom_explore_left_inside{
+    width:100%;
+    height:fit-content;
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.bottom_explore_left ul{
+    display:flex;
+    width:280px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    color: #6C9493;
+    overflow-wrap:break-word;
+    justify-content:center;
+}
+
+.bottom_explore_left ul li{
+    overflow-wrap:break-word;
+    margin-left:25px;
+}
+
+.bottom_explore_left_alt ul{
+    display:flex;
+    width:280px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    color: #6C9493;
+    overflow-wrap:break-word;
+    justify-content:center;
+}
+
+.bottom_explore_left_alt ul li{
+    overflow-wrap:break-word;
+    margin-left:25px;
+}
 
 /*
 CSS 

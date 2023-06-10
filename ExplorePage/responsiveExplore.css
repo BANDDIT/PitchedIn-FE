@@ -27,12 +27,7 @@
 }
 
 
-@media(max-width:1040px){
-    /*CSS FOR EXPLORE RIGHT*/
-    .explore_right{
-        width:670px;
-    }
-}
+
 
 @media(max-width:1040px){
     /*CSS FOR EXPLORE RIGHT*/
