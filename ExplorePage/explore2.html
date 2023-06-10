@@ -8,12 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Julius+Sans+One&family=Montserrat:wght@200;300;400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Navbar/navbar.css"/>
     <link rel="stylesheet" href="explore.css"/>
+    <link rel="stylesheet" href="responsiveExplore2.css"/>
+
 </head>
 <body>
-    <header>        
-        <a href="#">
-            <img src="../Asset/logo_pitchedin.png" id="logo"/>
-        </a>
+    <header>
+        <div class="logo_group">
+            <img src="../Asset/menu_responsive.png" class="menu_responsive"/>
+            <a href="#">
+                <img src="../Asset/logo_pitchedin.png" id="logo"/>
+            </a>
+        </div>
+
         
         <div id="nav-group">
             <a href="#" class="nav">Explore</a>
@@ -47,6 +53,40 @@
         </div>
     </header>
 
+    <div class="responsive_menu">
+        <div class="responsive_menu_content">
+            <img src="../Asset/explore_back.png" class="menu_back_symbol"/>
+            <h3>Menu</h3>
+            <div class="explore_menu">
+                <img src="../Asset/lp2_compas.png" class="menu_logo"/>
+                <p class="menu_text">Explore</p>
+            </div>
+            <div class="create_menu">
+                <img src="../Asset/plus_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Create</p>
+            </div>
+            <div class="forum_menu">
+                <img src="../Asset/chat_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Forum</p>
+            </div>
+
+            <div class="tips_menu">
+                <img src="../Asset/idea_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Tips</p>
+            </div>
+
+            <div class="signUp_menu">
+                <img src="../Asset/signUp.png" class="menu_logo"/>
+                <p class="menu_text">Sign Up</p>
+            </div>
+
+            <div class="logIn_menu">
+                <img src="../Asset/logIn.png" class="menu_logo"/>
+                <p class="menu_text">Log In</p>
+            </div>
+        </div>
+    </div>
+
     <div class="explore_page2">
         <div class="explore_page2_left">
             <form class="search_bar">
@@ -60,7 +100,7 @@
                 </div>
             </form>
             <div class="postingan_explore2">
-                <div class="color_circle_pp">
+                <div class="color_circle_pp pp_user">
                     <div class="white_circle_pp">
                         <img src="../Asset/brando_windah_pp.png"/>
                     </div>
@@ -72,10 +112,17 @@
                 </div>
                 <div class="postingan_explore2_content">
                     <div class="explore_right_head">
-                        <div class="explore_head_data">
-                            <h2>Brando Windah</h2>
-                            <h3>BOCILSTUDIO</h3>
-                            <p>Posted <b>4 hours</b> ago</p>
+                        <div class="explore_head_data_container">
+                            <div class="color_head_data_pp">
+                                <div class="white_head_data_pp">
+                                    <img src="../Asset/brando_windah_pp.png"/>                                    
+                                </div>
+                            </div>
+                            <div class="explore_head_data">
+                                <h2>Brando Windah</h2>
+                                <h3>BOCILSTUDIO</h3>
+                                <p>Posted <b>4 hours</b> ago</p>
+                            </div>
                         </div>
                         <div class="explore_head_tag">
                             <div class="first_tag">
@@ -87,7 +134,7 @@
                         </div>
                     </div>
                     <hr>
-                    <p>BOCILSTUDIO is a production house, specifically focusing on the creation of comedic skitz for the purpose of  entertainment. I am a streamer, active in YouTube with more than 9 million subscribers. With this company,
+                    <p>BOCILSTUDIO is a production house, specifically focusing on the creation of comedic skitz for the purpose of entertainment. I am a streamer, active in YouTube with more than 9 million subscribers. With this company,
                         I want to create more quality contents for my viewers. Join me in this adventure and let’s create a bigger
                         community!</p>
                     <img src="../Asset/banner-brando-windah.png"/>
@@ -97,7 +144,7 @@
                 </div>
             </div>
             <div class="postingan_explore2">
-                <div class="color_circle_pp">
+                <div class="color_circle_pp pp_user">
                     <div class="white_circle_pp">
                         <img src="../Asset/gol_d_roger.png"/>
                     </div>
@@ -109,11 +156,19 @@
                 </div>
                 <div class="postingan_explore2_content">
                     <div class="explore_right_head">
-                        <div class="explore_head_data">
-                            <h2>Gol D. Roger</h2>
-                            <h3>Deadman’s Booty</h3>
-                            <p>Posted <b>7 hours</b> ago</p>
+                        <div class="explore_head_data_container">
+                            <div class="color_head_data_pp">
+                                <div class="white_head_data_pp">
+                                    <img src="../Asset/gol_d_roger.png"/>
+                                </div>
+                            </div>
+                            <div class="explore_head_data">
+                                <h2>Gol D. Roger</h2>
+                                <h3>Deadman’s Booty</h3>
+                                <p>Posted <b>7 hours</b> ago</p>
+                            </div>
                         </div>
+
                         <div class="explore_head_tag">
                             <div class="first_tag">
                                 Food & Beverage

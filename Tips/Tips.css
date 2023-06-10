@@ -242,6 +242,8 @@ TIPS MAIN
 */
 .tips_main{
     width:600px;
+    padding-left:5px;
+    padding-right:5px;
     height:87vh;
     margin-left:1rem;
     display:flex;
@@ -1101,7 +1103,9 @@ MESSAGE
         align-items:center;
         margin-left:0px;
         margin-right:0px;
-        width:600px;
+        width:610px;
+        padding-left:5px;
+        padding-right:5px;
     }
 
     .search_area{
@@ -1113,6 +1117,9 @@ MESSAGE
     }
     .tips-preview-content-container{
         overflow-y:scroll;
+        width:600px;
+        padding-left:5px;
+        padding-right:5px;
     }
     .tips-preview-content{
         margin-top:5px;
