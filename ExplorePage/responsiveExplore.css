@@ -46,31 +46,6 @@
     .explore_right{
         width:500px;
     }
-    .explore_right_head{
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-    .explore_head_data_container{
-        width:100%;
-    }
-    .explore_head_tag{
-        margin-top:10px;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-        width:65%;
-    }
-
-    .explore_right_head{
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-
     .explore_head_data h2{
         font-size:22px;
         line-height:32px;
@@ -145,15 +120,46 @@
     .explore_right{
         width:500px;
     }
-    .explore_head_tag{
-        width:85%;
-    }
+
 }
 
 @media(max-width:790px){
     /*CSS FOR EXPLORE RIGHT*/
     .explore_right{
         width:400px;
+    }
+
+
+    .explore_right_head{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .explore_head_data_container{
+        width:100%;
+    }
+    .explore_head_tag{
+        margin-top:10px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        width:85%;
+    }
+    .explore_right_head{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .explore_head_data h2{
+        font-size:22px;
+        line-height:32px;
+    }
+    .explore_head_data h3{
+        font-size:18px;
+        line-height:28px;
     }
 }
 
