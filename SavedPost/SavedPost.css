@@ -569,6 +569,7 @@ SAVED POST2 MODAL
     top:0;
     display:none;
     pointer-events:none;
+    position:fixed;
 }
 
 .saved_post2_modal_content{
