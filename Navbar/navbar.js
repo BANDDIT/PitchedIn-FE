@@ -1,3 +1,5 @@
+if(document.getElementById('dropDown-circle')){
+
 let dropDown_circle = document.getElementById('dropDown-circle');
 let dropDown_img = document.getElementById('dropDown-img');
 let showDrop = document.querySelector('.dropDown-konten-group');
@@ -64,3 +66,6 @@ back.addEventListener('click',function(e){
     responsive_content.style.pointerEvents="none";
     responsive_content.style.opacity=0;
 });
+
+
+}

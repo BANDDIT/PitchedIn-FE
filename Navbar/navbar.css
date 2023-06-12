@@ -250,7 +250,6 @@ header{
     width:100vw;
     height:100vh;
     background: rgba(0, 0, 0, 0.51);
-    position:absolute;
     z-index:999;
     display:flex;
     opacity:0;
@@ -258,6 +257,7 @@ header{
     transition:0.4s;
     top:0;
     left:0;
+    position:fixed;
 }
 
 .responsive_menu_content{
@@ -393,7 +393,7 @@ header{
     .dropDown-konten-group{
         height:180px;
         width:160px;
-        margin-right:150px;
+        margin-right:0px;
         margin-top:240px;
     }
 }

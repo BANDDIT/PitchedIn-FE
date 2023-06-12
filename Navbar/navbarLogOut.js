@@ -1,3 +1,6 @@
+if(!document.getElementById('dropDown-circle')){
+
+
 let menu_responsive = document.querySelector('.menu_responsive');
 let responsive_content = document.querySelector('.responsive_menu');
 let back = document.querySelector('.menu_back_symbol');
@@ -17,3 +20,6 @@ window.addEventListener('resize',function(e){
         responsive_content.style.pointerEvents="none";
     }
 });
+
+
+}
