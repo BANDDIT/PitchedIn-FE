@@ -11,18 +11,27 @@
     <link rel="stylesheet" href="../Explore Page/explore.css">
     -->
     <link rel="stylesheet" href="SavedPost.css">
+    <link rel="stylesheet" href="ResponsiveSavedPost.css"/>
+
 </head>
 <body>
     <header>
-        <a href="#">
-            <img src="../Asset/logo_pitchedin.png" id="logo"/>
-        </a>
+        <div class="logo_group">
+            <img src="../Asset/menu_responsive.png" class="menu_responsive"/>
+            <a href="#">
+                <img src="../Asset/logo_pitchedin.png" id="logo"/>
+            </a>
+        </div>
+
+        
         <div id="nav-group">
             <a href="#" class="nav">Explore</a>
             <a href="#" class="nav">Create</a>
             <a href="#" class="nav">Forum</a>
             <a href="#" class="nav">Tips</a>        
         </div>
+
+
         <div id="pp_welcome_dropdown">
             <a href="#" class="pp-circle">    
                 <img src="../Asset/Dummy_Profile_Picture.png" class="pp-img">
@@ -47,6 +56,40 @@
         </div>
     </header>
 
+    <div class="responsive_menu">
+        <div class="responsive_menu_content">
+            <img src="../Asset/explore_back.png" class="menu_back_symbol"/>
+            <h3>Menu</h3>
+            <div class="explore_menu">
+                <img src="../Asset/lp2_compas.png" class="menu_logo"/>
+                <p class="menu_text">Explore</p>
+            </div>
+            <div class="create_menu">
+                <img src="../Asset/plus_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Create</p>
+            </div>
+            <div class="forum_menu">
+                <img src="../Asset/chat_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Forum</p>
+            </div>
+
+            <div class="tips_menu">
+                <img src="../Asset/idea_lp2.png" class="menu_logo"/>
+                <p class="menu_text">Tips</p>
+            </div>
+
+            <div class="signUp_menu">
+                <img src="../Asset/signUp.png" class="menu_logo"/>
+                <p class="menu_text">Sign Up</p>
+            </div>
+
+            <div class="logIn_menu">
+                <img src="../Asset/logIn.png" class="menu_logo"/>
+                <p class="menu_text">Log In</p>
+            </div>
+        </div>
+    </div>
+
     <div class="back">
         <div class="back_content">
             <a>
@@ -58,6 +101,27 @@
     <div class="saved_post2">
         <div class="explore_left">
             <div class="user_profile1">
+
+                <div class="profile_container">
+                    <div class="color_circle_pp">
+                        <div class="white_circle_pp">
+                            <img src="../Asset/Dummy_Profile_Picture.png"/>
+                        </div>
+                        <div class="online_status">
+                            <div class="online_green">
+    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user_data">
+                        <h3>Reyhan Dominicus</h3>
+                        <p>Texas, United States</p>
+                        <p class="quote_investor">“Tu eres el mejor portero del mundo. Artinya apa bang messi? Ente adalah goalkeeper paling baik di dunia.”</p>
+                    </div>
+                </div>
+
+                <!--
                 <div class="color_circle_pp">
                     <div class="white_circle_pp">
                         <img src="../Asset/Dummy_Profile_Picture.png"/>
@@ -73,7 +137,7 @@
                     <p>Texas, United States</p>
                 </div>
                 <p>“Tu eres el mejor portero del mundo. Artinya apa bang messi? Ente adalah goalkeeper paling baik di dunia.”</p>
-                
+            -->
                 <div class="connect_and_chat">
                     <div class="connect">
                         Connect
@@ -81,7 +145,27 @@
                     <img src="../Asset/chat_logo.png"/>
                 </div>
             </div>
-            
+            <div class="bottom_explore_left_alt">
+                <div class="bottom_explore_left_inside">
+                    <ul>
+                        Contact Us
+                        <li>Terms of Service</li>
+                        <li>FAQ</li>
+                    </ul>
+                    <ul>
+                        Privacy Policy
+                        <li>Instagram</li>
+                    </ul>
+                    <ul>
+                        Facebook
+                        <li>Twitter</li>
+                    </ul>
+                    <ul>
+                        &#169;&nbsp;Copyright 2023 PitchedIn.
+                    </ul>
+                </div>
+
+            </div>
             <div class="bottom_explore_left">
                 <ul>
                     Contact Us
@@ -191,6 +275,37 @@
                     <h2>No comments yet</h2>
                 </div>
             </div>
+        </div>
+
+        <div class="saved_post2_modal_content_alt">
+            <div class="content_alt_header">
+                <div class="modal_pp_color_alt">
+                    <div class="modal_pp_white_alt">
+                        <img src="../Asset/Dummy_Profile_Picture.png"/>
+                    </div>
+                </div>  
+                <h2 class="content_alt_username">Reyhan Dominicus</h2>
+            </div>
+
+            <div class="content_frame_modal_alt">
+                <img src="../Asset/sample_content_1.png"/>     
+            </div>
+
+            <div class="modal_like_dkk_alt">
+                <img src="../Asset/heart-noLike.png" class="heart_alt"/>
+                <img src="../Asset/comment-logo.png" class="comment_alt"/>
+                <img src="../Asset/save-logo.png" class="save_alt"/>
+            </div>
+
+            <div class="modal_pp_caption_content_data_alt">              
+                <h2>Reyhan Dominicus</h2>           
+                <p>Still don’t know how to increase your social media engagement? 
+              
+                    Follow these tips!
+                </p>
+                <p class="tags_modal_content_alt">#socialmedia #protips #contentcreation</p>
+            </div>
+            <img src="../Asset/close.png" class="modal_close modal_close_alt"/>
         </div>
     </div>
 

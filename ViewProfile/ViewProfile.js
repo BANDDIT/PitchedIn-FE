@@ -30,7 +30,34 @@ let edit_btn_h3 = document.querySelector('.edit-btn h3');
 let about_me_content = document.querySelector('.about-me_content p');
 let about_me_content_rev = document.querySelector('.about_me_content_rev');
 
+let biodata_investor = document.querySelector('.biodata_investor');
 
+
+/*
+window.addEventListener('resize',function(e){
+    let window_width = window.innerWidth;
+    let investor_profile_width = document.querySelector('.investor_profile');    
+    if(window_width>1220){
+        biodata_investor.style.maxWidth = "635px";
+    }
+    else if(window_width<=700){
+        biodata_investor.style.maxWidth = "405px";
+        biodata_investor.style.background="red";
+
+    }
+    else if(window_width<=640){
+        biodata_investor.style.maxWidth = "335px";
+
+    }
+    else if(window_width<=520){
+        biodata_investor.style.maxWidth = "235px";
+
+    }
+    else if(window_width<=425){
+        biodata_investor.style.maxWidth = "135px";
+
+    }
+});*/
 
 if(document.querySelector('.my_post_content_img')!=null){
     let img = document.querySelectorAll('.my_post_content_img img');

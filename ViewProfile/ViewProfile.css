@@ -38,17 +38,23 @@ header{
     height:75%;
     width:98%;
     height:fit-content;
+    margin-bottom:-10px;
+
 }
 
 .investor_profile{
     /*
     width:71%;
     height:100%;*/
+
     width:880px;
     height:455px;
+
+    height:475px;
     background-color: white;
     border-radius:30px;
-    margin-right:10px;
+    /*
+    margin-right:10px;*/
     padding-left:3%;
     padding-right:1%;
     padding-top:1%;
@@ -96,6 +102,7 @@ header{
 .profile_investor{
     width:100%;
     height:40%;
+    height:fit-content;
     display:flex;
     flex-direction:row;
 }
@@ -131,17 +138,22 @@ header{
 
 .biodata_investor{
     margin-left:4%;
-    width:75%;
+    margin-left:15px;
     height:100%;
+    height:fit-content;
     display:flex;
     flex-direction:column;
+    max-width:635px;
+    /*
+    width:fit-content;
+    width:75%;*/
 }
 
 .tag-investor{
     display:flex;
     width:17%;
     height:15%;
-    height:45px;
+    height:35px;
     width:100px;
     background-color:#6C9493;
     border-radius:50px;
@@ -203,7 +215,7 @@ header{
 }
 
 .quote_investor{
-    margin-top:1%;
+    margin-top:10px;
     width:100%;
     height:42%;
 }
@@ -213,8 +225,8 @@ header{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size:2vh;
     font-size:15px;
+    text-align:justify;
 }
 
 
@@ -225,6 +237,9 @@ header{
     justify-content:center;
     margin-top:3%;
     margin-bottom:4%;
+
+    margin-top:0px;
+    margin-bottom:0px;
 }
 
 .connections{
@@ -241,8 +256,10 @@ header{
 
 .line{
     width:0.3%;
+    width:2px;
     height:80%;
     background: #203D3B;
+    
 }
 
 .connection{
@@ -355,8 +372,8 @@ header{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size:2vh;
     font-size:15px;
+    text-align:justify;
 }
 
 .about_me_content_rev{
@@ -596,8 +613,10 @@ User Reccomendations
     flex-direction:column;
     align-items:center;
     justify-content:flex-start;
-    margin-left:1rem;
+    /*
+    margin-left:1rem;*/
     overflow-y:scroll;
+
 }
 
 .search_bar{
@@ -744,6 +763,8 @@ User Reccomendations
   
     height:52vh;
     height:400px;
+    height:435px;
+    height:420px;
     background:white;
     border-radius:40px;
     padding:1rem;
@@ -823,11 +844,10 @@ User Reccomendations
 
 .options{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content:flex-start;
     height:fit-content;
     width:100%;
-    margin-top:15px;
 }
 
 .options-connect{
@@ -843,7 +863,7 @@ User Reccomendations
     height:25px;
     width:90px;
     margin-right:10px;
-    margin-left:200px;
+    margin-left:155px;
 }
 
 .options-more{
@@ -1560,7 +1580,7 @@ First Page
 .first_page{
     width:100%;
     height:fit-content;
-    margin-top:20px;
+    margin-top:30px;
     margin-bottom:20px;
     display:flex;
     flex-direction:column;
@@ -1788,6 +1808,7 @@ First Page
     font-weight: 500;
     font-size: 12px;
     color: #6C9493;
+    text-align:justify;
 }
 .my_experience_content_left ul{
     margin-top:10px;
@@ -2177,6 +2198,7 @@ MESSAGE
     border-radius:100%;
 }
 
+/*
 
 @media(max-width:1100px){
     .investor_profile,.my_post_content,.my_experience_content{
@@ -2217,13 +2239,6 @@ MESSAGE
         width:85%;
     }
 }
-/*
-@media(max-width:650px){
-    .investor_profile,.my_post_content, .my_experience_content{
-        width:550px;
-        margin-right:0px;
-    }   
-}*/
 
 @media(max-width:620px){
     .investor_profile,.my_post_content, .my_experience_content{
@@ -2231,13 +2246,6 @@ MESSAGE
         margin-right:0px;
     }   
 }
-/*
-@media(max-width:550px){
-    .investor_profile,.my_post_content, .my_experience_content{
-        width:450px;
-        margin-right:0px;
-    }   
-}*/
 
 @media(max-width:520px){
     .investor_profile,.my_post_content, .my_experience_content{
@@ -2328,3 +2336,5 @@ MESSAGE
     }
  
 }
+
+*/

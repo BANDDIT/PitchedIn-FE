@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Julius+Sans+One&family=Montserrat:wght@200;300;400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="MyViewProfile.css"/>
     <link rel="stylesheet" href="../Navbar/navbar.css"/>
+    <link rel="stylesheet" href="ResponsiveMyViewProfile.css"/>
 </head>
 <body>
     <header>
@@ -84,72 +85,30 @@
         </div>
     </div>
 
-    <!--
-    <div class="first_page">
-        <div class="my_post">
-            <div class="my_post_content">
-                <div class="my_post_content_left">
-                    <div class="post_content_judul">
-                        <h2 >My Posts & Activities</h2>
-                        <div class="edit_post">
-                            <img src="../Asset/remove.png"/>
-                            <h2>Edit</h2>
-                        </div>
-                    </div>
-                    <hr class="garis_post">
-                    <div class="my_post_content_img">
-                        <img src="../Asset/sample_content_1.png"/>
-                        <img src="../Asset/sample_content_2.png"/>
-                        <img src="../Asset/sample_content_3.png"/>
-
-                    </div>
-                    <div class="post_see_more">
-                        <p>Click to see more</p>
-                    </div>
-                </div>
-                <div class="my_post_content_right">
-                    <img src="../Asset/right_vp2.png"/>
-                </div>
-            </div>
-            <div class="my_post_blank">
-            </div>
-        </div>
-        <div class="my_experience">
-            <div class="my_experience_content">
-                <div class="my_experience_content_left">
-                    <div class="experience_content_judul">
-                        <h2 >My Experience</h2>
-                        <div class="edit_experience">
-                            <img src="../Asset/remove.png"/>
-                            <h2>Edit</h2>
-                        </div>
-                    </div>
-                    <hr class="garis_experience">
-                    <div class="experience_judul">
-                        <h2>FineNance</h2>
-                        <h2>2019</h2>
-                    </div>
-                    <p class="experience_content_p">FineNance is a money management tool that was published for android. I invested in this company
-                        back in 2019, and it turned out to be one of my biggest investment. The company was only $15,000
-                        worth, but now its net worth is $2,5 billions. Here are some of my involvements in the company:</p>
-                    <ul>
-                        <li>Invested $50,000 in the company</li>
-                        <li>Helped the company to increase market reach by 300% within a year</li>
-                        <li>Biggest stock holder in the company with 35% shares</li>  
-                    </ul>
-                </div>
-                <div class="my_experience_content_right">
-                </div>
-            </div>
-            <div class="my_experience_blank">      
-            </div>
-        </div>
-    </div>
-    -->
-
     <div class="saved_post2">
         <div class="explore_left">
             <div class="user_profile1">
+
+                <div class="profile_container">
+                    <div class="color_circle_pp">
+                        <div class="white_circle_pp">
+                            <img src="../Asset/Dummy_Profile_Picture.png"/>
+                        </div>
+                        <div class="online_status">
+                            <div class="online_green">
+    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user_data">
+                        <h3>Reyhan Dominicus</h3>
+                        <p>Texas, United States</p>
+                        <p class="quote_investor">“Tu eres el mejor portero del mundo. Artinya apa bang messi? Ente adalah goalkeeper paling baik di dunia.”</p>
+                    </div>
+                </div>
+
+                <!--
                 <div class="color_circle_pp">
                     <div class="white_circle_pp">
                         <img src="../Asset/Dummy_Profile_Picture.png"/>
@@ -165,7 +124,7 @@
                     <p>Texas, United States</p>
                 </div>
                 <p>“Tu eres el mejor portero del mundo. Artinya apa bang messi? Ente adalah goalkeeper paling baik di dunia.”</p>
-                
+                -->
                 <div class="connect_and_chat">
                     <div class="connect">
                         Connect
@@ -174,6 +133,27 @@
                 </div>
             </div>
             
+            <div class="bottom_explore_left_alt">
+                <div class="bottom_explore_left_inside">
+                    <ul>
+                        Contact Us
+                        <li>Terms of Service</li>
+                        <li>FAQ</li>
+                    </ul>
+                    <ul>
+                        Privacy Policy
+                        <li>Instagram</li>
+                    </ul>
+                    <ul>
+                        Facebook
+                        <li>Twitter</li>
+                    </ul>
+                    <ul>
+                        &#169;&nbsp;Copyright 2023 PitchedIn.
+                    </ul>
+                </div>
+
+            </div>
             <div class="bottom_explore_left">
                 <ul>
                     Contact Us
@@ -284,6 +264,40 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="saved_post2_modal_content_alt">
+            <div class="content_alt_header">
+                <div class="modal_pp_color_alt">
+                    <div class="modal_pp_white_alt">
+                        <img src="../Asset/Dummy_Profile_Picture.png"/>
+                    </div>
+                </div>  
+                <h2 class="content_alt_username">Reyhan Dominicus</h2>
+            </div>
+
+            <div class="content_frame_modal_alt">
+                <img src="../Asset/sample_content_1.png"/>     
+            </div>
+
+            <div class="modal_like_dkk_alt">
+                <img src="../Asset/heart-noLike.png" class="heart_alt"/>
+                <img src="../Asset/comment-logo.png" class="comment_alt"/>
+                <img src="../Asset/save-logo.png" class="save_alt"/>
+            </div>
+
+            <div class="modal_pp_caption_content_data_alt">              
+                <h2>Reyhan Dominicus</h2>           
+                <p>Still don’t know how to increase your social media engagement? 
+              
+                    Follow these tips!
+                </p>
+                <p class="tags_modal_content_alt">#socialmedia #protips #contentcreation</p>
+            </div>
+            <img src="../Asset/close.png" class="modal_close modal_close_alt"/>
+        </div>
+
     </div>
 
     <div class="message">

@@ -1,7 +1,5 @@
 @media(max-width:1220px){
-    .saved_post_right{
-        width:850px;
-    }
+
     /*Saved Post 2 Right*/
     .saved_post2_right{
         width:850px;
@@ -13,10 +11,6 @@
 }
 
 @media(max-width:1160px){
-    .saved_post_right{
-        width:790px;
-    }
-
 
     /*Saved Post 2 Right*/
     .saved_post2_right{
@@ -28,11 +22,8 @@
     }
 }
 
-@media(max-width:1100px){
 
-    .saved_post_right{
-        width:730px;
-    }
+@media(max-width:1100px){
 
     /*Saved Post 2 Right*/
     .saved_post2_right{
@@ -44,11 +35,8 @@
     }
 }
 
-@media(max-width:1040px){
 
-    .saved_post_right{
-        width:610px;
-    }
+@media(max-width:1040px){
 
     /*Saved Post 2 Right*/
     .saved_post2_right{
@@ -60,12 +48,7 @@
     }
 }
 
-
 @media(max-width:940px){
-    .saved_post_right{
-        width:500px;
-    }
-
     /*Saved Post 2 Right*/
     .saved_post2_right{
         width:500px;
@@ -77,37 +60,21 @@
 }
 
 @media(max-width:840px){
-
-    .saved_post_right{
-        width:500px;
-    }
-
-    /*CSS FOR EXPLORE LEFT*/
+    /*Explore Left*/
     .user_profile1{
-        width:250px; 
-
+        width:250px;
         word-wrap:break-word;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
+    }
+    .quote_investor{
+        width:215px;
     }
     .bottom_explore_left{
         display:none;
     }
     .bottom_explore_left_alt{
         display:flex;
-        flex-direction:column;
-        justify-content:flex-start;
-        align-items:center; 
     }
-    .bottom_explore_left_alt ul{
-        overflow-wrap:break-word;
-        width:fit-content;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-    
+
     /*Saved Post 2 Right*/
     .saved_post2_right{
         width:500px;
@@ -119,12 +86,6 @@
 }
 
 @media(max-width:790px){
-
-    .saved_post_right{
-        width:400px;
-    }
-
-
     /*Saved Post 2 Right*/
     .saved_post2_right{
         width:400px;
@@ -155,7 +116,6 @@
 }
 
 @media(max-width:700px){
-
     .saved_post2{
         display:flex;
         flex-direction:column;
@@ -163,15 +123,6 @@
     }
     .bottom_explore_left_alt{
         display:none;
-    }
-
-
-    .saved_post_right{
-        width:600px;
-        margin-left:0px;
-        margin-right:0px;
-        margin-top:20px;
-        margin-bottom:20px;
     }
 
     /*Explore Page Left*/
@@ -217,51 +168,6 @@
     .bottom_explore_left{
         display:none;
     }
-    /*
-    .explore_left{
-        width:600px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-
-    }
-    .user_profile1{
-        width:600px;
-        height:fit-content;
-        padding-top:10px;
-    }
-
-    .profile_container{
-        display:flex;
-        flex-direction:row;
-        align-items:flex-start;
-    }
-    .user_data{
-
-        display:flex;
-        flex-direction:column;
-    
-        align-items:flex-start;
-        justify-content:flex-start;
-        width:480px;
-        margin-top:0px;
-
- 
-    }
-    .user_data p{
-        text-align:justify;
-    }
-    .quote_investor{
-        margin-top:10px;
-        width:100%;
-        text-align:justify;
-    }
-    .connect_and_chat{
-        margin-top:1rem;
-    }
-    .bottom_explore_left{
-        display:none;
-    }*/
 
     /*Saved Post2 Right*/
     .saved_post2_right{
@@ -303,32 +209,9 @@
     .message{
         display:none;
     }
-
-
-    /*MODAL
-    .saved_post2_modal_content{
-        display:none;
-    }
-    .saved_post2_modal_content_alt{
-        display:flex;
-    }
-
-    .explore_left{
-        display:none;
-    }
-    .saved_post_right{
-        width:600px;
-        margin-left:0px;
-        margin-right:0px;
-    }*/
 }
 
 @media(max-width:640px){
-
-    .saved_post_right{
-        width:500px;
-    }
-
     /*Explore Left*/
     .explore_left,.user_profile1{
         width:500px;
@@ -348,11 +231,6 @@
 }
 
 @media(max-width:520px){
-
-    .saved_post_right{
-        width:400px;
-    }
-
     /*Explore Left*/
     .explore_left, .user_profile1{
         width:400px;
@@ -385,17 +263,6 @@
 }
 
 @media(max-width:425px){
-    .saved_post_right{
-        width:320px;
-    }
-    .container_right_h2 h2{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        color: #447270;
-    }
-
 
     /*Explore Left*/
     .explore_left, .user_profile1{
