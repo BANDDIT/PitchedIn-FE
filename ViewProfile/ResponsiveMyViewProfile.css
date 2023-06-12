@@ -113,6 +113,12 @@
         width:636px;
         height:455px;
     }
+    .modal_left_caption{
+        height:32%;
+    }
+    .modal_left_comment{
+        height:68%;
+    }
 }
 
 @media(max-width:700px){

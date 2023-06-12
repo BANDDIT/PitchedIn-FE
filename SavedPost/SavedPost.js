@@ -31,5 +31,10 @@ modal_comment.style.height = (100 - modal_caption.style.height) + "px";
 modal_caption.style.height="fit-content";*/
 
 
-
+let close_alt = document.querySelector('.modal_close_alt');
+close_alt.addEventListener('click',function(e){
+    modal.style.display="none";
+    modal.style.pointerEvents="none";
+    saved_post2.style.pointerEvents="auto";
+});
 
